@@ -1,0 +1,463 @@
+{
+  "_metadata": {
+    "description": "Switch power database. Values are typical from manufacturer datasheets; verify against the specific configuration you are deploying. system_watts is idle/non-PoE system draw. poe_budget_watts is the maximum PoE the switch can deliver — actual closet heat depends on how much of that budget is utilized to remote devices. role describes the network-topology tier (Cisco/Meraki: Access/Distribution/Core; Arista: Access Leaf/Floor Spine/Building Spine). The Configure-APs dialog uses role to filter which switches can host APs (access-tier only).",
+    "last_updated": "2026-05",
+    "schema_version": 2
+  },
+  "switches": [
+    {
+      "vendor": "Cisco Catalyst",
+      "model": "C9200L-24T-4G",
+      "ports": 24,
+      "speed": "1G",
+      "poe_class": "None",
+      "system_watts": 50,
+      "poe_budget_watts": 0,
+      "role": "Access"
+    },
+    {
+      "vendor": "Cisco Catalyst",
+      "model": "C9200L-48T-4G",
+      "ports": 48,
+      "speed": "1G",
+      "poe_class": "None",
+      "system_watts": 80,
+      "poe_budget_watts": 0,
+      "role": "Access"
+    },
+    {
+      "vendor": "Cisco Catalyst",
+      "model": "C9200-24P",
+      "ports": 24,
+      "speed": "1G",
+      "poe_class": "PoE+",
+      "system_watts": 60,
+      "poe_budget_watts": 370,
+      "role": "Access"
+    },
+    {
+      "vendor": "Cisco Catalyst",
+      "model": "C9200-48P",
+      "ports": 48,
+      "speed": "1G",
+      "poe_class": "PoE+",
+      "system_watts": 90,
+      "poe_budget_watts": 740,
+      "role": "Access"
+    },
+    {
+      "vendor": "Cisco Catalyst",
+      "model": "C9200-48PXG",
+      "ports": 48,
+      "speed": "mGig",
+      "poe_class": "PoE+",
+      "system_watts": 110,
+      "poe_budget_watts": 740,
+      "role": "Access"
+    },
+    {
+      "vendor": "Cisco Catalyst",
+      "model": "C9300-24T",
+      "ports": 24,
+      "speed": "1G",
+      "poe_class": "None",
+      "system_watts": 70,
+      "poe_budget_watts": 0,
+      "role": "Access"
+    },
+    {
+      "vendor": "Cisco Catalyst",
+      "model": "C9300-48T",
+      "ports": 48,
+      "speed": "1G",
+      "poe_class": "None",
+      "system_watts": 110,
+      "poe_budget_watts": 0,
+      "role": "Access"
+    },
+    {
+      "vendor": "Cisco Catalyst",
+      "model": "C9300-24P",
+      "ports": 24,
+      "speed": "1G",
+      "poe_class": "PoE+",
+      "system_watts": 90,
+      "poe_budget_watts": 445,
+      "role": "Access"
+    },
+    {
+      "vendor": "Cisco Catalyst",
+      "model": "C9300-48P",
+      "ports": 48,
+      "speed": "1G",
+      "poe_class": "PoE+",
+      "system_watts": 130,
+      "poe_budget_watts": 822,
+      "role": "Access"
+    },
+    {
+      "vendor": "Cisco Catalyst",
+      "model": "C9300-24U",
+      "ports": 24,
+      "speed": "1G",
+      "poe_class": "UPOE",
+      "system_watts": 100,
+      "poe_budget_watts": 830,
+      "role": "Access"
+    },
+    {
+      "vendor": "Cisco Catalyst",
+      "model": "C9300-48U",
+      "ports": 48,
+      "speed": "1G",
+      "poe_class": "UPOE",
+      "system_watts": 140,
+      "poe_budget_watts": 1100,
+      "role": "Access"
+    },
+    {
+      "vendor": "Cisco Catalyst",
+      "model": "C9300-24UX",
+      "ports": 24,
+      "speed": "mGig",
+      "poe_class": "UPOE",
+      "system_watts": 130,
+      "poe_budget_watts": 880,
+      "role": "Access"
+    },
+    {
+      "vendor": "Cisco Catalyst",
+      "model": "C9300-48UXM",
+      "ports": 48,
+      "speed": "mGig",
+      "poe_class": "UPOE",
+      "system_watts": 175,
+      "poe_budget_watts": 1100,
+      "role": "Access"
+    },
+    {
+      "vendor": "Cisco Catalyst",
+      "model": "C9300X-24Y",
+      "ports": 24,
+      "speed": "25G fiber",
+      "poe_class": "None",
+      "system_watts": 220,
+      "poe_budget_watts": 0,
+      "role": "Distribution"
+    },
+    {
+      "vendor": "Cisco Catalyst",
+      "model": "C9300X-48HX",
+      "ports": 48,
+      "speed": "mGig",
+      "poe_class": "UPOE+",
+      "system_watts": 220,
+      "poe_budget_watts": 1570,
+      "role": "Access"
+    },
+    {
+      "vendor": "Cisco Meraki",
+      "model": "MS120-24",
+      "ports": 24,
+      "speed": "1G",
+      "poe_class": "None",
+      "system_watts": 25,
+      "poe_budget_watts": 0,
+      "role": "Access"
+    },
+    {
+      "vendor": "Cisco Meraki",
+      "model": "MS120-48",
+      "ports": 48,
+      "speed": "1G",
+      "poe_class": "None",
+      "system_watts": 40,
+      "poe_budget_watts": 0,
+      "role": "Access"
+    },
+    {
+      "vendor": "Cisco Meraki",
+      "model": "MS120-24P",
+      "ports": 24,
+      "speed": "1G",
+      "poe_class": "PoE+",
+      "system_watts": 40,
+      "poe_budget_watts": 370,
+      "role": "Access"
+    },
+    {
+      "vendor": "Cisco Meraki",
+      "model": "MS120-48LP",
+      "ports": 48,
+      "speed": "1G",
+      "poe_class": "PoE+",
+      "system_watts": 60,
+      "poe_budget_watts": 370,
+      "role": "Access"
+    },
+    {
+      "vendor": "Cisco Meraki",
+      "model": "MS120-48FP",
+      "ports": 48,
+      "speed": "1G",
+      "poe_class": "PoE+",
+      "system_watts": 70,
+      "poe_budget_watts": 740,
+      "role": "Access"
+    },
+    {
+      "vendor": "Cisco Meraki",
+      "model": "MS125-24P",
+      "ports": 24,
+      "speed": "1G",
+      "poe_class": "PoE+",
+      "system_watts": 50,
+      "poe_budget_watts": 370,
+      "role": "Access"
+    },
+    {
+      "vendor": "Cisco Meraki",
+      "model": "MS125-48FP",
+      "ports": 48,
+      "speed": "1G",
+      "poe_class": "PoE+",
+      "system_watts": 80,
+      "poe_budget_watts": 740,
+      "role": "Access"
+    },
+    {
+      "vendor": "Cisco Meraki",
+      "model": "MS210-24",
+      "ports": 24,
+      "speed": "1G",
+      "poe_class": "None",
+      "system_watts": 50,
+      "poe_budget_watts": 0,
+      "role": "Access"
+    },
+    {
+      "vendor": "Cisco Meraki",
+      "model": "MS210-48",
+      "ports": 48,
+      "speed": "1G",
+      "poe_class": "None",
+      "system_watts": 75,
+      "poe_budget_watts": 0,
+      "role": "Access"
+    },
+    {
+      "vendor": "Cisco Meraki",
+      "model": "MS225-24P",
+      "ports": 24,
+      "speed": "1G",
+      "poe_class": "PoE+",
+      "system_watts": 70,
+      "poe_budget_watts": 370,
+      "role": "Access"
+    },
+    {
+      "vendor": "Cisco Meraki",
+      "model": "MS225-48FP",
+      "ports": 48,
+      "speed": "1G",
+      "poe_class": "PoE+",
+      "system_watts": 100,
+      "poe_budget_watts": 740,
+      "role": "Access"
+    },
+    {
+      "vendor": "Cisco Meraki",
+      "model": "MS250-24P",
+      "ports": 24,
+      "speed": "1G",
+      "poe_class": "PoE+",
+      "system_watts": 90,
+      "poe_budget_watts": 370,
+      "role": "Access"
+    },
+    {
+      "vendor": "Cisco Meraki",
+      "model": "MS250-48FP",
+      "ports": 48,
+      "speed": "1G",
+      "poe_class": "PoE+",
+      "system_watts": 130,
+      "poe_budget_watts": 740,
+      "role": "Access"
+    },
+    {
+      "vendor": "Cisco Meraki",
+      "model": "MS355-24X2",
+      "ports": 24,
+      "speed": "mGig",
+      "poe_class": "UPOE",
+      "system_watts": 150,
+      "poe_budget_watts": 740,
+      "role": "Access"
+    },
+    {
+      "vendor": "Cisco Meraki",
+      "model": "MS390-24P",
+      "ports": 24,
+      "speed": "1G",
+      "poe_class": "UPOE",
+      "system_watts": 110,
+      "poe_budget_watts": 822,
+      "role": "Access"
+    },
+    {
+      "vendor": "Cisco Meraki",
+      "model": "MS390-48UX",
+      "ports": 48,
+      "speed": "mGig",
+      "poe_class": "UPOE",
+      "system_watts": 175,
+      "poe_budget_watts": 1100,
+      "role": "Access"
+    },
+    {
+      "vendor": "Cisco Meraki",
+      "model": "MS425-32",
+      "ports": 32,
+      "speed": "10G fiber",
+      "poe_class": "None",
+      "system_watts": 230,
+      "poe_budget_watts": 0,
+      "role": "Distribution"
+    },
+    {
+      "vendor": "Arista",
+      "model": "CCS-720XP-24Y6",
+      "ports": 24,
+      "speed": "mGig",
+      "poe_class": "PoE++ (Type 4)",
+      "system_watts": 90,
+      "poe_budget_watts": 740,
+      "role": "Access Leaf"
+    },
+    {
+      "vendor": "Arista",
+      "model": "CCS-720XP-48Y6",
+      "ports": 48,
+      "speed": "mGig",
+      "poe_class": "PoE++ (Type 4)",
+      "system_watts": 130,
+      "poe_budget_watts": 1440,
+      "role": "Access Leaf"
+    },
+    {
+      "vendor": "Arista",
+      "model": "CCS-720XP-48ZC2",
+      "ports": 48,
+      "speed": "mGig",
+      "poe_class": "PoE++ (Type 4)",
+      "system_watts": 145,
+      "poe_budget_watts": 1920,
+      "role": "Access Leaf"
+    },
+    {
+      "vendor": "Arista",
+      "model": "CCS-720XP-96ZC2",
+      "ports": 96,
+      "speed": "mGig",
+      "poe_class": "PoE++ (Type 4)",
+      "system_watts": 220,
+      "poe_budget_watts": 3840,
+      "role": "Access Leaf"
+    },
+    {
+      "vendor": "Arista",
+      "model": "CCS-722XPM-48ZY8",
+      "ports": 48,
+      "speed": "mGig",
+      "poe_class": "PoE++ (Type 4)",
+      "system_watts": 175,
+      "poe_budget_watts": 2200,
+      "role": "Access Leaf"
+    },
+    {
+      "vendor": "Arista",
+      "model": "CCS-710P-12",
+      "ports": 12,
+      "speed": "1G",
+      "poe_class": "PoE+",
+      "system_watts": 35,
+      "poe_budget_watts": 240,
+      "role": "Access Leaf"
+    },
+    {
+      "vendor": "Arista",
+      "model": "CCS-710P-16P",
+      "ports": 16,
+      "speed": "1G",
+      "poe_class": "PoE+",
+      "system_watts": 40,
+      "poe_budget_watts": 240,
+      "role": "Access Leaf"
+    },
+    {
+      "vendor": "Arista",
+      "model": "CCS-7010T-48",
+      "ports": 48,
+      "speed": "1G",
+      "poe_class": "None",
+      "system_watts": 100,
+      "poe_budget_watts": 0,
+      "role": "Access Leaf"
+    },
+    {
+      "vendor": "Arista",
+      "model": "CCS-7050X3-32S",
+      "ports": 32,
+      "speed": "100G fiber",
+      "poe_class": "None",
+      "system_watts": 280,
+      "poe_budget_watts": 0,
+      "role": "Building Spine"
+    },
+    {
+      "vendor": "Arista",
+      "model": "DCS-7050SX3-48YC8C",
+      "ports": 56,
+      "speed": "25G/100G fiber",
+      "poe_class": "None",
+      "system_watts": 300,
+      "poe_budget_watts": 0,
+      "role": "Building Spine",
+      "notes": "Data center spine. 48x25G SFP28 + 8x100G QSFP100. 2x 500W PSU. Typical role: Building Spine (BSP) at large sites."
+    },
+    {
+      "vendor": "Arista",
+      "model": "DCS-7050SX3-24YC4C-S",
+      "ports": 28,
+      "speed": "25G/100G fiber",
+      "poe_class": "None",
+      "system_watts": 200,
+      "poe_budget_watts": 0,
+      "role": "Floor Spine",
+      "notes": "Data center spine. 24x25G SFP28 + 4x100G QSFP100. 2x 500W PSU. Typical role: Closet Spine (CSP) at large sites."
+    },
+    {
+      "vendor": "Arista",
+      "model": "CCS-720XP-48TXH-2C-S (1050W x2)",
+      "ports": 48,
+      "speed": "10G copper",
+      "poe_class": "PoE++ (Type 4, 90W)",
+      "system_watts": 168,
+      "poe_budget_watts": 1775,
+      "role": "Floor Spine",
+      "notes": "Campus leaf. 48x 10G/mGig 90W PoE + 4x25G + 2x100G. With 2x 1050W PSUs (PWR-1021-AC-RED), PoE budget per Arista QSG is 1775W. Typical role: Building/Closet Spine (BSP/CSP) at small sites."
+    },
+    {
+      "vendor": "Arista",
+      "model": "CCS-720XP-48TXH-2C-S (2000W x2)",
+      "ports": 48,
+      "speed": "10G copper",
+      "poe_class": "PoE++ (Type 4, 90W)",
+      "system_watts": 168,
+      "poe_budget_watts": 3700,
+      "role": "Access Leaf",
+      "notes": "Campus leaf with high-power PSUs. 48x 10G/mGig 90W PoE + 4x25G + 2x100G. With 2x 2000W PSUs, supports near-full 90W bt on every port. Typical role: Closet Leaf (CLF) at all site sizes."
+    }
+  ]
+}

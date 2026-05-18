@@ -1,0 +1,363 @@
+{
+  "_metadata": {
+    "description": "UPS model catalog for closet-class UPSs (typically <= 6 kVA single-phase). Each entry includes battery_type ('lithium_ion' or 'vrla') and modular (true/false). The recommendation engine favors lithium_ion entries — they have 2-3x the service life of VRLA, tolerate higher closet ambient temps, and have lower lifetime TCO despite higher upfront cost. For >15 kVA building-level UPS sizing, see ups_modular_units.json.",
+    "schema_version": 2,
+    "last_updated": "2026-05"
+  },
+  "ups_units": [
+    {
+      "vendor": "APC",
+      "family": "APC Smart-UPS Lithium-Ion",
+      "model": "SMTL750RM2UC",
+      "capacity_va": 750,
+      "capacity_w": 600,
+      "form_factor": "Rackmount 2U",
+      "battery_type": "lithium_ion",
+      "modular": false,
+      "notes": "Lithium-ion. 5-year warranty including battery. ~8-10 year battery life vs 3-5 for VRLA. Tolerates higher ambient temps. Common entry-level Li-Ion closet UPS.",
+      "runtime_curve": {
+        "25": 35,
+        "50": 13,
+        "75": 7,
+        "100": 4
+      }
+    },
+    {
+      "vendor": "APC",
+      "family": "APC Smart-UPS Lithium-Ion",
+      "model": "SMTL1000RM2UC",
+      "capacity_va": 1000,
+      "capacity_w": 800,
+      "form_factor": "Rackmount 2U",
+      "battery_type": "lithium_ion",
+      "modular": false,
+      "notes": "Lithium-ion. 5-year warranty. Good fit for closets with 1-2 PoE switches and a small AP fleet.",
+      "runtime_curve": {
+        "25": 32,
+        "50": 12,
+        "75": 6,
+        "100": 4
+      }
+    },
+    {
+      "vendor": "APC",
+      "family": "APC Smart-UPS Lithium-Ion",
+      "model": "SMTL1500RM3UC",
+      "capacity_va": 1500,
+      "capacity_w": 1440,
+      "form_factor": "Rackmount 3U",
+      "battery_type": "lithium_ion",
+      "modular": false,
+      "notes": "Lithium-ion. 5-year warranty. Workhorse closet Li-Ion UPS — short-depth rack compatible.",
+      "runtime_curve": {
+        "25": 38,
+        "50": 14,
+        "75": 7,
+        "100": 4
+      }
+    },
+    {
+      "vendor": "APC",
+      "family": "APC Smart-UPS Lithium-Ion",
+      "model": "SMTL2200RM2UC",
+      "capacity_va": 2200,
+      "capacity_w": 1980,
+      "form_factor": "Rackmount 2U",
+      "battery_type": "lithium_ion",
+      "modular": false,
+      "notes": "Lithium-ion. 5-year warranty. For closets with multiple PoE+ switches.",
+      "runtime_curve": {
+        "25": 28,
+        "50": 10,
+        "75": 5,
+        "100": 3
+      }
+    },
+    {
+      "vendor": "APC",
+      "family": "APC Smart-UPS Lithium-Ion",
+      "model": "SMTL3000RMI2UC",
+      "capacity_va": 3000,
+      "capacity_w": 2700,
+      "form_factor": "Rackmount 2U",
+      "battery_type": "lithium_ion",
+      "modular": false,
+      "notes": "Lithium-ion. 5-year warranty. Larger IDF rooms with PoE-heavy switch loads.",
+      "runtime_curve": {
+        "25": 26,
+        "50": 9,
+        "75": 5,
+        "100": 3
+      }
+    },
+    {
+      "vendor": "APC",
+      "family": "APC Smart-UPS Ultra (Li-Ion)",
+      "model": "SRTL3KRM1UC",
+      "capacity_va": 3000,
+      "capacity_w": 3000,
+      "form_factor": "Rackmount 1U",
+      "battery_type": "lithium_ion",
+      "modular": false,
+      "notes": "Online double-conversion Li-Ion. Industry's only 1U 3kW UPS - saves rack space. Unity power factor.",
+      "runtime_curve": {
+        "25": 22,
+        "50": 8,
+        "75": 4,
+        "100": 2
+      }
+    },
+    {
+      "vendor": "APC",
+      "family": "APC Smart-UPS Ultra (Li-Ion)",
+      "model": "SRTL5KRM2UC",
+      "capacity_va": 5000,
+      "capacity_w": 5000,
+      "form_factor": "Rackmount 2U",
+      "battery_type": "lithium_ion",
+      "modular": false,
+      "notes": "Online Li-Ion 5kW in 2U. Smallest 5kW UPS. For larger IDFs with mission-critical PoE++.",
+      "runtime_curve": {
+        "25": 20,
+        "50": 7,
+        "75": 4,
+        "100": 2
+      }
+    },
+    {
+      "vendor": "APC",
+      "family": "APC Smart-UPS (VRLA)",
+      "model": "SMT750RM2UC",
+      "capacity_va": 750,
+      "capacity_w": 600,
+      "form_factor": "Rackmount 2U",
+      "battery_type": "vrla",
+      "modular": false,
+      "notes": "VRLA. SmartConnect cloud monitoring. 3-5 year battery life. Lower cost, but Li-Ion SMTL750RM2UC preferred for closets.",
+      "runtime_curve": {
+        "25": 38,
+        "50": 14,
+        "75": 7,
+        "100": 4
+      }
+    },
+    {
+      "vendor": "APC",
+      "family": "APC Smart-UPS (VRLA)",
+      "model": "SMT1500RM2UC",
+      "capacity_va": 1500,
+      "capacity_w": 1000,
+      "form_factor": "Rackmount 2U",
+      "battery_type": "vrla",
+      "modular": false,
+      "notes": "VRLA. Common closet UPS. EBM (SMX48RMBP2U) doubles or triples runtime. Li-Ion SMTL1500RM3UC has longer battery life.",
+      "runtime_curve": {
+        "25": 42,
+        "50": 16,
+        "75": 8,
+        "100": 5
+      }
+    },
+    {
+      "vendor": "APC",
+      "family": "APC Smart-UPS (VRLA)",
+      "model": "SMT3000RM2UC",
+      "capacity_va": 3000,
+      "capacity_w": 2700,
+      "form_factor": "Rackmount 2U",
+      "battery_type": "vrla",
+      "modular": false,
+      "notes": "VRLA. Pair with SMX120RMBP2U EBM as needed. Li-Ion SMTL3000RMI2UC preferred for warm closets.",
+      "runtime_curve": {
+        "25": 28,
+        "50": 10,
+        "75": 5,
+        "100": 3
+      }
+    },
+    {
+      "vendor": "APC",
+      "family": "APC Smart-UPS SRT (online, VRLA)",
+      "model": "SRT2200RMXLA",
+      "capacity_va": 2200,
+      "capacity_w": 1980,
+      "form_factor": "Rackmount 2U",
+      "battery_type": "vrla",
+      "modular": false,
+      "notes": "VRLA. Double-conversion online. Tighter voltage tolerance than line-interactive Smart-UPS; good for PoE-heavy closets sensitive to dirty power.",
+      "runtime_curve": {
+        "25": 36,
+        "50": 14,
+        "75": 7,
+        "100": 4
+      }
+    },
+    {
+      "vendor": "APC",
+      "family": "APC Smart-UPS SRT (online, VRLA)",
+      "model": "SRT3000RMXLA",
+      "capacity_va": 3000,
+      "capacity_w": 2700,
+      "form_factor": "Rackmount 2U",
+      "battery_type": "vrla",
+      "modular": false,
+      "notes": "VRLA. Online double-conversion 3 kVA.",
+      "runtime_curve": {
+        "25": 32,
+        "50": 12,
+        "75": 6,
+        "100": 4
+      }
+    },
+    {
+      "vendor": "APC",
+      "family": "APC Smart-UPS SRT (online, VRLA)",
+      "model": "SRT5KRMXLT",
+      "capacity_va": 5000,
+      "capacity_w": 4500,
+      "form_factor": "Rackmount 3U",
+      "battery_type": "vrla",
+      "modular": false,
+      "notes": "VRLA. Online 5 kVA. Smart-UPS Ultra SRTL5KRM2U Li-Ion is the modern preferred alternative.",
+      "runtime_curve": {
+        "25": 25,
+        "50": 9,
+        "75": 4,
+        "100": 2
+      }
+    },
+    {
+      "vendor": "Vertiv",
+      "family": "Vertiv Liebert GXT5 (VRLA)",
+      "model": "GXT5-750IRT2UXL",
+      "capacity_va": 750,
+      "capacity_w": 750,
+      "form_factor": "Rack/Tower 2U",
+      "battery_type": "vrla",
+      "modular": false,
+      "notes": "VRLA. Online double-conversion. Unity power factor (W = VA). Long-life batteries.",
+      "runtime_curve": {
+        "25": 22,
+        "50": 9,
+        "75": 5,
+        "100": 3
+      },
+      "list_price_usd": 1322.73,
+      "price_updated": "2026-05-18"
+    },
+    {
+      "vendor": "Vertiv",
+      "family": "Vertiv Liebert GXT5 (VRLA)",
+      "model": "GXT5-1000IRT2UXL",
+      "capacity_va": 1000,
+      "capacity_w": 1000,
+      "form_factor": "Rack/Tower 2U",
+      "battery_type": "vrla",
+      "modular": false,
+      "runtime_curve": {
+        "25": 20,
+        "50": 8,
+        "75": 4,
+        "100": 2
+      },
+      "notes": "VRLA. Online double-conversion, unity PF.",
+      "list_price_usd": 1145.57,
+      "price_updated": "2026-05-18"
+    },
+    {
+      "vendor": "Vertiv",
+      "family": "Vertiv Liebert GXT5 (VRLA)",
+      "model": "GXT5-1500IRT2UXL",
+      "capacity_va": 1500,
+      "capacity_w": 1500,
+      "form_factor": "Rack/Tower 2U",
+      "battery_type": "vrla",
+      "modular": false,
+      "notes": "VRLA. Online double-conversion, unity PF. Common closet pick when clean power matters.",
+      "runtime_curve": {
+        "25": 22,
+        "50": 8,
+        "75": 4,
+        "100": 2
+      },
+      "list_price_usd": 1510.99,
+      "price_updated": "2026-05-18"
+    },
+    {
+      "vendor": "Vertiv",
+      "family": "Vertiv Liebert GXT5 (VRLA)",
+      "model": "GXT5-2000IRT2UXL",
+      "capacity_va": 2000,
+      "capacity_w": 2000,
+      "form_factor": "Rack/Tower 2U",
+      "battery_type": "vrla",
+      "modular": false,
+      "runtime_curve": {
+        "25": 18,
+        "50": 7,
+        "75": 4,
+        "100": 2
+      },
+      "notes": "VRLA. Online double-conversion, unity PF.",
+      "list_price_usd": 2132.37,
+      "price_updated": "2026-05-18"
+    },
+    {
+      "vendor": "Vertiv",
+      "family": "Vertiv Liebert GXT5 (VRLA)",
+      "model": "GXT5-3000IRT2UXL",
+      "capacity_va": 3000,
+      "capacity_w": 3000,
+      "form_factor": "Rack/Tower 2U",
+      "battery_type": "vrla",
+      "modular": false,
+      "runtime_curve": {
+        "25": 17,
+        "50": 6,
+        "75": 3,
+        "100": 2
+      },
+      "notes": "VRLA. Online double-conversion, unity PF. Strong choice for PoE-heavy IDFs.",
+      "list_price_usd": 3551.1,
+      "price_updated": "2026-05-18"
+    },
+    {
+      "vendor": "Vertiv",
+      "family": "Vertiv Liebert GXT5 (VRLA)",
+      "model": "GXT5-5000IRT5UXL",
+      "capacity_va": 5000,
+      "capacity_w": 5000,
+      "form_factor": "Rack/Tower 5U",
+      "battery_type": "vrla",
+      "modular": false,
+      "runtime_curve": {
+        "25": 14,
+        "50": 5,
+        "75": 3,
+        "100": 1
+      },
+      "notes": "VRLA. 5 kVA online. Larger MDF rooms. Vertiv Liebert APS modular Li-Ion (in ups_modular_units.json) is preferred for >5 kVA.",
+      "list_price_usd": 6152.36,
+      "price_updated": "2026-05-18"
+    },
+    {
+      "vendor": "Vertiv",
+      "family": "Vertiv Liebert GXT5 (VRLA)",
+      "model": "GXT5-6000IRT5UXL",
+      "capacity_va": 6000,
+      "capacity_w": 6000,
+      "form_factor": "Rack/Tower 5U",
+      "battery_type": "vrla",
+      "modular": false,
+      "notes": "VRLA. 6 kVA online with optional EBC battery cabinets for extended runtime.",
+      "runtime_curve": {
+        "25": 12,
+        "50": 4,
+        "75": 2,
+        "100": 1
+      },
+      "list_price_usd": 6538.9,
+      "price_updated": "2026-05-18"
+    }
+  ]
+}

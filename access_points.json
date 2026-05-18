@@ -1,0 +1,216 @@
+{
+  "_metadata": {
+    "description": "Enterprise wireless AP catalog. Watts are typical full-load draw used to estimate PoE utilization on switches. dual_home_capable indicates the AP supports redundant uplinks to two switches with PoE failover (dual mGig, LAG/LACP, or smart-rate paired ports). Vendor field is used by the Configure-APs dialog to filter AP models to match the closet's switch vendor (single-vendor closets are the norm).",
+    "schema_version": 3,
+    "last_updated": "2026-05"
+  },
+  "access_points": [
+    {
+      "vendor": "Cisco",
+      "model": "Catalyst 9105AX",
+      "label": "Catalyst 9105AX (Wi-Fi 6, low-end)",
+      "watts": 20,
+      "poe_class": "802.3at",
+      "dual_home_capable": false,
+      "wifi_gen": "Wi-Fi 6"
+    },
+    {
+      "vendor": "Cisco",
+      "model": "Catalyst 9120AX",
+      "label": "Catalyst 9120AX (Wi-Fi 6, mid)",
+      "watts": 25,
+      "poe_class": "802.3at",
+      "dual_home_capable": false,
+      "wifi_gen": "Wi-Fi 6"
+    },
+    {
+      "vendor": "Cisco",
+      "model": "Catalyst 9130AX",
+      "label": "Catalyst 9130AX (Wi-Fi 6, high, dual mGig)",
+      "watts": 30,
+      "poe_class": "802.3at",
+      "dual_home_capable": true,
+      "wifi_gen": "Wi-Fi 6"
+    },
+    {
+      "vendor": "Cisco",
+      "model": "Catalyst 9136AX",
+      "label": "Catalyst 9136AX (Wi-Fi 6E tri-radio)",
+      "watts": 35,
+      "poe_class": "802.3at",
+      "dual_home_capable": true,
+      "wifi_gen": "Wi-Fi 6E"
+    },
+    {
+      "vendor": "Cisco",
+      "model": "Catalyst 9166I",
+      "label": "Catalyst 9166I (Wi-Fi 6E, dual mGig)",
+      "watts": 35,
+      "poe_class": "802.3at",
+      "dual_home_capable": true,
+      "wifi_gen": "Wi-Fi 6E"
+    },
+    {
+      "vendor": "Cisco",
+      "model": "Catalyst 9176I",
+      "label": "Catalyst 9176I (Wi-Fi 7, dual mGig)",
+      "watts": 60,
+      "poe_class": "802.3bt",
+      "dual_home_capable": true,
+      "wifi_gen": "Wi-Fi 7"
+    },
+    {
+      "vendor": "Meraki",
+      "model": "MR36",
+      "label": "Meraki MR36 (Wi-Fi 6, mid)",
+      "watts": 20,
+      "poe_class": "802.3at",
+      "dual_home_capable": false,
+      "wifi_gen": "Wi-Fi 6"
+    },
+    {
+      "vendor": "Meraki",
+      "model": "MR46",
+      "label": "Meraki MR46 (Wi-Fi 6, high)",
+      "watts": 30,
+      "poe_class": "802.3at",
+      "dual_home_capable": false,
+      "wifi_gen": "Wi-Fi 6"
+    },
+    {
+      "vendor": "Meraki",
+      "model": "MR57",
+      "label": "Meraki MR57 (Wi-Fi 6, tri-radio, dual mGig)",
+      "watts": 35,
+      "poe_class": "802.3at",
+      "dual_home_capable": true,
+      "wifi_gen": "Wi-Fi 6"
+    },
+    {
+      "vendor": "Meraki",
+      "model": "CW9162I",
+      "label": "Meraki CW9162I (Wi-Fi 6E, mid)",
+      "watts": 30,
+      "poe_class": "802.3at",
+      "dual_home_capable": false,
+      "wifi_gen": "Wi-Fi 6E"
+    },
+    {
+      "vendor": "Meraki",
+      "model": "CW9166I",
+      "label": "Meraki CW9166I (Wi-Fi 6E, dual mGig)",
+      "watts": 35,
+      "poe_class": "802.3at",
+      "dual_home_capable": true,
+      "wifi_gen": "Wi-Fi 6E"
+    },
+    {
+      "vendor": "Meraki",
+      "model": "CW9176I",
+      "label": "Meraki CW9176I (Wi-Fi 7, dual mGig)",
+      "watts": 60,
+      "poe_class": "802.3bt",
+      "dual_home_capable": true,
+      "wifi_gen": "Wi-Fi 7"
+    },
+    {
+      "vendor": "Arista",
+      "model": "C-130",
+      "label": "Arista C-130 (Wi-Fi 6, mid)",
+      "watts": 20,
+      "poe_class": "802.3at",
+      "dual_home_capable": false,
+      "wifi_gen": "Wi-Fi 6"
+    },
+    {
+      "vendor": "Arista",
+      "model": "C-235",
+      "label": "Arista C-235 (Wi-Fi 6, high)",
+      "watts": 30,
+      "poe_class": "802.3at",
+      "dual_home_capable": false,
+      "wifi_gen": "Wi-Fi 6"
+    },
+    {
+      "vendor": "Arista",
+      "model": "C-260",
+      "label": "Arista C-260 (Wi-Fi 6E, mid)",
+      "watts": 30,
+      "poe_class": "802.3at",
+      "dual_home_capable": false,
+      "wifi_gen": "Wi-Fi 6E"
+    },
+    {
+      "vendor": "Arista",
+      "model": "C-360",
+      "label": "Arista C-360 (Wi-Fi 6E, dual mGig)",
+      "watts": 35,
+      "poe_class": "802.3at",
+      "dual_home_capable": true,
+      "wifi_gen": "Wi-Fi 6E"
+    },
+    {
+      "vendor": "Arista",
+      "model": "W-318",
+      "label": "Arista W-318 (Wi-Fi 7, dual mGig)",
+      "watts": 45,
+      "poe_class": "802.3bt",
+      "dual_home_capable": true,
+      "wifi_gen": "Wi-Fi 7"
+    },
+    {
+      "vendor": "Arista",
+      "model": "W-368",
+      "label": "Arista W-368 (Wi-Fi 7, high, dual mGig)",
+      "watts": 60,
+      "poe_class": "802.3bt",
+      "dual_home_capable": true,
+      "wifi_gen": "Wi-Fi 7"
+    },
+    {
+      "vendor": "Generic",
+      "model": "wifi6-mid",
+      "label": "Generic Wi-Fi 6 (2x2, low-power)",
+      "watts": 15,
+      "poe_class": "802.3af/at",
+      "dual_home_capable": false,
+      "wifi_gen": "Wi-Fi 6"
+    },
+    {
+      "vendor": "Generic",
+      "model": "wifi6-full",
+      "label": "Generic Wi-Fi 6 (4x4, full-power)",
+      "watts": 25,
+      "poe_class": "802.3at",
+      "dual_home_capable": false,
+      "wifi_gen": "Wi-Fi 6"
+    },
+    {
+      "vendor": "Generic",
+      "model": "wifi6e",
+      "label": "Generic Wi-Fi 6E (tri-radio)",
+      "watts": 30,
+      "poe_class": "802.3at",
+      "dual_home_capable": false,
+      "wifi_gen": "Wi-Fi 6E"
+    },
+    {
+      "vendor": "Generic",
+      "model": "wifi7",
+      "label": "Generic Wi-Fi 7 (tri-radio)",
+      "watts": 50,
+      "poe_class": "802.3bt",
+      "dual_home_capable": true,
+      "wifi_gen": "Wi-Fi 7"
+    },
+    {
+      "vendor": "Generic",
+      "model": "custom",
+      "label": "Custom (enter watts manually)",
+      "watts": 0,
+      "poe_class": "Variable",
+      "dual_home_capable": true,
+      "wifi_gen": "Custom"
+    }
+  ]
+}
