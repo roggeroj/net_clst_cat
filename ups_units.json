@@ -1,8 +1,9 @@
 {
   "_metadata": {
-    "description": "UPS model catalog for closet-class UPSs (typically <= 6 kVA single-phase). Each entry includes battery_type ('lithium_ion' or 'vrla') and modular (true/false). The recommendation engine favors lithium_ion entries — they have 2-3x the service life of VRLA, tolerate higher closet ambient temps, and have lower lifetime TCO despite higher upfront cost. For >15 kVA building-level UPS sizing, see ups_modular_units.json.",
-    "schema_version": 2,
-    "last_updated": "2026-05"
+    "description": "UPS model catalog for closet-class UPSs (typically <= 6 kVA single-phase). Each entry includes battery_type ('lithium_ion' or 'vrla') and modular (true/false). The recommendation engine favors lithium_ion entries — they have 2-3x the service life of VRLA, tolerate higher closet ambient temps, and have lower lifetime TCO despite higher upfront cost. runtime_curve is a %-load->minutes estimate; an optional runtime_curve_watts (watt->minutes points, manufacturer-verified) takes precedence when present on a row. Optional input_voltage_v/input_phase/max_input_current_a/recommended_breaker_a/input_plug surface manufacturer breaker/plug data in place of the NEC-80%-rule estimate — populate only where confirmed, absence falls back to the estimate. For >15 kVA building-level UPS sizing, see ups_modular_units.json.",
+    "schema_version": 4,
+    "last_updated": "2026-10",
+    "pricing_note": "list_price_usd is a street price (CDW advertised or sign-in price from a cdw.com web snapshot, see price_source) unless price_source says otherwise; msrp_usd is the manufacturer list price CDW showed alongside it. Prices are planning figures, not quotes."
   },
   "ups_units": [
     {
@@ -20,7 +21,11 @@
         "50": 13,
         "75": 7,
         "100": 4
-      }
+      },
+      "list_price_usd": 1271.99,
+      "msrp_usd": 1920.0,
+      "price_source": "CDW advertised price, cdw.com #5466378; web snapshot 2026-10-14",
+      "price_updated": "2026-10-14"
     },
     {
       "vendor": "APC",
@@ -37,7 +42,11 @@
         "50": 12,
         "75": 6,
         "100": 4
-      }
+      },
+      "list_price_usd": 1911.99,
+      "msrp_usd": 2885.0,
+      "price_source": "CDW advertised price, cdw.com #5601722; web snapshot 2026-10-14",
+      "price_updated": "2026-10-14"
     },
     {
       "vendor": "APC",
@@ -54,7 +63,11 @@
         "50": 14,
         "75": 7,
         "100": 4
-      }
+      },
+      "list_price_usd": 2322.99,
+      "msrp_usd": 3505.0,
+      "price_source": "CDW advertised price, cdw.com #5139223; web snapshot 2026-10-14",
+      "price_updated": "2026-10-14"
     },
     {
       "vendor": "APC",
@@ -71,24 +84,32 @@
         "50": 10,
         "75": 5,
         "100": 3
-      }
+      },
+      "list_price_usd": 3978.99,
+      "msrp_usd": 5335.0,
+      "price_source": "CDW advertised price, cdw.com #6583248; web snapshot 2026-10-14",
+      "price_updated": "2026-10-14"
     },
     {
       "vendor": "APC",
       "family": "APC Smart-UPS Lithium-Ion",
-      "model": "SMTL3000RMI2UC",
+      "model": "SMTL3000RM2UC",
       "capacity_va": 3000,
       "capacity_w": 2700,
       "form_factor": "Rackmount 2U",
       "battery_type": "lithium_ion",
       "modular": false,
-      "notes": "Lithium-ion. 5-year warranty. Larger IDF rooms with PoE-heavy switch loads.",
+      "notes": "Lithium-ion, 120 V. 5-year warranty. Larger IDF rooms with PoE-heavy switch loads.",
       "runtime_curve": {
         "25": 26,
         "50": 9,
         "75": 5,
         "100": 3
-      }
+      },
+      "list_price_usd": 4555.99,
+      "msrp_usd": 6110.0,
+      "price_source": "CDW advertised price, cdw.com #6583251; web snapshot 2026-10-14",
+      "price_updated": "2026-10-14"
     },
     {
       "vendor": "APC",
@@ -105,24 +126,31 @@
         "50": 8,
         "75": 4,
         "100": 2
-      }
+      },
+      "list_price_usd": 6962.99,
+      "msrp_usd": 9335.0,
+      "price_source": "CDW sign-in price, cdw.com #6699050; web snapshot 2026-10-14",
+      "price_updated": "2026-10-14"
     },
     {
       "vendor": "APC",
       "family": "APC Smart-UPS Ultra (Li-Ion)",
-      "model": "SRTL5KRM2UC",
+      "model": "SRTL5KRM2UT",
       "capacity_va": 5000,
       "capacity_w": 5000,
       "form_factor": "Rackmount 2U",
       "battery_type": "lithium_ion",
       "modular": false,
-      "notes": "Online Li-Ion 5kW in 2U. Smallest 5kW UPS. For larger IDFs with mission-critical PoE++.",
+      "notes": "Online Li-Ion 5 kW in 2U, 208 V input/output. Smallest 5 kW UPS. For larger IDFs with mission-critical PoE++.",
       "runtime_curve": {
         "25": 20,
         "50": 7,
         "75": 4,
         "100": 2
-      }
+      },
+      "list_price_usd": 10942.99,
+      "price_source": "CDW sign-in price, cdw.com #6735183; web snapshot 2026-10-14; MSRP not shown",
+      "price_updated": "2026-10-14"
     },
     {
       "vendor": "APC",
@@ -139,7 +167,11 @@
         "50": 14,
         "75": 7,
         "100": 4
-      }
+      },
+      "list_price_usd": 658.99,
+      "msrp_usd": 983.0,
+      "price_source": "CDW advertised price, cdw.com #4751124; web snapshot 2026-10-14",
+      "price_updated": "2026-10-14"
     },
     {
       "vendor": "APC",
@@ -156,7 +188,11 @@
         "50": 16,
         "75": 8,
         "100": 5
-      }
+      },
+      "list_price_usd": 1014.99,
+      "msrp_usd": 1505.0,
+      "price_source": "CDW advertised price, cdw.com #4818706; web snapshot 2026-10-14",
+      "price_updated": "2026-10-14"
     },
     {
       "vendor": "APC",
@@ -167,13 +203,17 @@
       "form_factor": "Rackmount 2U",
       "battery_type": "vrla",
       "modular": false,
-      "notes": "VRLA. Pair with SMX120RMBP2U EBM as needed. Li-Ion SMTL3000RMI2UC preferred for warm closets.",
+      "notes": "VRLA. Pair with SMX120RMBP2U EBM as needed. Li-Ion SMTL3000RM2UC preferred for warm closets.",
       "runtime_curve": {
         "25": 28,
         "50": 10,
         "75": 5,
         "100": 3
-      }
+      },
+      "list_price_usd": 2039.99,
+      "msrp_usd": 3345.0,
+      "price_source": "CDW advertised price, cdw.com #4894882; web snapshot 2026-10-14",
+      "price_updated": "2026-10-14"
     },
     {
       "vendor": "APC",
@@ -190,7 +230,11 @@
         "50": 14,
         "75": 7,
         "100": 4
-      }
+      },
+      "list_price_usd": 2441.99,
+      "msrp_usd": 3525.0,
+      "price_source": "CDW advertised price, cdw.com #4270568; web snapshot 2026-10-14",
+      "price_updated": "2026-10-14"
     },
     {
       "vendor": "APC",
@@ -207,7 +251,11 @@
         "50": 12,
         "75": 6,
         "100": 4
-      }
+      },
+      "list_price_usd": 4078.99,
+      "msrp_usd": 6685.0,
+      "price_source": "CDW advertised price, cdw.com #4246855; web snapshot 2026-10-14",
+      "price_updated": "2026-10-14"
     },
     {
       "vendor": "APC",
@@ -218,146 +266,556 @@
       "form_factor": "Rackmount 3U",
       "battery_type": "vrla",
       "modular": false,
-      "notes": "VRLA. Online 5 kVA. Smart-UPS Ultra SRTL5KRM2U Li-Ion is the modern preferred alternative.",
+      "notes": "VRLA. Online 5 kVA. Smart-UPS Ultra SRTL5KRM2UT (208 V) Li-Ion is the modern preferred alternative.",
       "runtime_curve": {
         "25": 25,
         "50": 9,
         "75": 4,
         "100": 2
-      }
+      },
+      "list_price_usd": 6696.99,
+      "msrp_usd": 10225.0,
+      "price_source": "CDW advertised price, cdw.com #3565776; web snapshot 2026-10-14",
+      "price_updated": "2026-10-14"
     },
     {
       "vendor": "Vertiv",
       "family": "Vertiv Liebert GXT5 (VRLA)",
-      "model": "GXT5-750IRT2UXL",
+      "model": "GXT5-750LVRT2UXL",
       "capacity_va": 750,
       "capacity_w": 750,
       "form_factor": "Rack/Tower 2U",
       "battery_type": "vrla",
       "modular": false,
-      "notes": "VRLA. Online double-conversion. Unity power factor (W = VA). Long-life batteries.",
+      "notes": "VRLA. 120 V online double-conversion, unity PF (W = VA). Long-life batteries. Runtime: Vertiv guide spec SL-71027 full-load internal-battery figure; half-load scaled from the data-sheet pair.",
       "runtime_curve": {
-        "25": 22,
-        "50": 9,
-        "75": 5,
-        "100": 3
+        "25": 51,
+        "50": 21,
+        "75": 12,
+        "100": 8
       },
-      "list_price_usd": 1322.73,
-      "price_updated": "2026-05-18"
+      "list_price_usd": 1128.99,
+      "msrp_usd": 1700.0,
+      "price_source": "CDW sign-in price, cdw.com #5616063; web snapshot 2026-10-14",
+      "price_updated": "2026-10-14"
     },
     {
       "vendor": "Vertiv",
       "family": "Vertiv Liebert GXT5 (VRLA)",
-      "model": "GXT5-1000IRT2UXL",
+      "model": "GXT5-1000LVRT2UXL",
       "capacity_va": 1000,
       "capacity_w": 1000,
       "form_factor": "Rack/Tower 2U",
       "battery_type": "vrla",
       "modular": false,
+      "notes": "VRLA. 120 V online double-conversion, unity PF. Runtime: Vertiv guide spec SL-71027 full-load internal-battery figure; half-load scaled from the data-sheet pair.",
       "runtime_curve": {
-        "25": 20,
-        "50": 8,
-        "75": 4,
-        "100": 2
+        "25": 43,
+        "50": 16,
+        "75": 9,
+        "100": 6
       },
-      "notes": "VRLA. Online double-conversion, unity PF.",
-      "list_price_usd": 1145.57,
-      "price_updated": "2026-05-18"
+      "list_price_usd": 1235.99,
+      "msrp_usd": 1862.0,
+      "price_source": "CDW advertised price, cdw.com #5604677; web snapshot 2026-10-14",
+      "price_updated": "2026-10-14"
     },
     {
       "vendor": "Vertiv",
       "family": "Vertiv Liebert GXT5 (VRLA)",
-      "model": "GXT5-1500IRT2UXL",
+      "model": "GXT5-1500LVRT2UXL",
       "capacity_va": 1500,
-      "capacity_w": 1500,
+      "capacity_w": 1350,
       "form_factor": "Rack/Tower 2U",
       "battery_type": "vrla",
       "modular": false,
-      "notes": "VRLA. Online double-conversion, unity PF. Common closet pick when clean power matters.",
+      "notes": "VRLA. 120 V online double-conversion, 0.9 PF (1500 VA / 1350 W). Common closet pick when clean power matters. Runtime: Vertiv guide spec SL-71027 full-load internal-battery figure; half-load scaled from the data-sheet pair.",
       "runtime_curve": {
-        "25": 22,
-        "50": 8,
-        "75": 4,
-        "100": 2
+        "25": 34,
+        "50": 13,
+        "75": 7,
+        "100": 5
       },
-      "list_price_usd": 1510.99,
-      "price_updated": "2026-05-18"
+      "list_price_usd": 1629.99,
+      "msrp_usd": 2456.0,
+      "price_source": "CDW advertised price, cdw.com #5610548; web snapshot 2026-10-14",
+      "price_updated": "2026-10-14"
     },
     {
       "vendor": "Vertiv",
       "family": "Vertiv Liebert GXT5 (VRLA)",
-      "model": "GXT5-2000IRT2UXL",
+      "model": "GXT5-2000LVRT2UXL",
       "capacity_va": 2000,
-      "capacity_w": 2000,
+      "capacity_w": 1800,
       "form_factor": "Rack/Tower 2U",
       "battery_type": "vrla",
       "modular": false,
+      "notes": "VRLA. 120 V online double-conversion, 0.9 PF (2000 VA / 1800 W). Runtime: Vertiv guide spec SL-71027 full-load internal-battery figure; half-load scaled from the data-sheet pair.",
       "runtime_curve": {
-        "25": 18,
-        "50": 7,
-        "75": 4,
-        "100": 2
+        "25": 28,
+        "50": 9,
+        "75": 5,
+        "100": 3
       },
-      "notes": "VRLA. Online double-conversion, unity PF.",
-      "list_price_usd": 2132.37,
-      "price_updated": "2026-05-18"
+      "list_price_usd": 2189.0,
+      "msrp_usd": 3225.0,
+      "price_source": "CDW advertised price, cdw.com #5616064; web snapshot 2026-10-14",
+      "price_updated": "2026-10-14"
     },
     {
       "vendor": "Vertiv",
       "family": "Vertiv Liebert GXT5 (VRLA)",
-      "model": "GXT5-3000IRT2UXL",
+      "model": "GXT5-3000LVRT2UXL",
       "capacity_va": 3000,
-      "capacity_w": 3000,
+      "capacity_w": 2700,
       "form_factor": "Rack/Tower 2U",
       "battery_type": "vrla",
       "modular": false,
+      "notes": "VRLA. 120 V online double-conversion, 0.9 PF (3000 VA / 2700 W). Strong choice for PoE-heavy IDFs. Runtime: Vertiv guide spec SL-71027 full-load internal-battery figure; half-load scaled from the data-sheet pair.",
       "runtime_curve": {
-        "25": 17,
-        "50": 6,
-        "75": 3,
-        "100": 2
+        "25": 32,
+        "50": 10,
+        "75": 5,
+        "100": 3
       },
-      "notes": "VRLA. Online double-conversion, unity PF. Strong choice for PoE-heavy IDFs.",
-      "list_price_usd": 3551.1,
-      "price_updated": "2026-05-18"
+      "list_price_usd": 3761.99,
+      "msrp_usd": 5541.0,
+      "price_source": "CDW sign-in price, cdw.com #5604905; web snapshot 2026-10-14",
+      "price_updated": "2026-10-14"
     },
     {
       "vendor": "Vertiv",
       "family": "Vertiv Liebert GXT5 (VRLA)",
-      "model": "GXT5-5000IRT5UXL",
+      "model": "GXT5-5000MVRT4UXLN",
       "capacity_va": 5000,
       "capacity_w": 5000,
-      "form_factor": "Rack/Tower 5U",
+      "form_factor": "Rack/Tower 4U",
       "battery_type": "vrla",
       "modular": false,
+      "notes": "VRLA. 5 kVA online, 208/120 V (MV), unity PF, RDU101 card included. Larger MDF rooms. Runtime: Vertiv brochure SL-70505 internal battery (matches vertiv_pods.json chassis_runtimes). Vertiv Liebert APS modular Li-Ion (in ups_modular_units.json) is preferred for >5 kVA.",
       "runtime_curve": {
-        "25": 14,
-        "50": 5,
-        "75": 3,
-        "100": 1
+        "25": 35,
+        "50": 12,
+        "75": 7,
+        "100": 4
       },
-      "notes": "VRLA. 5 kVA online. Larger MDF rooms. Vertiv Liebert APS modular Li-Ion (in ups_modular_units.json) is preferred for >5 kVA.",
-      "list_price_usd": 6152.36,
-      "price_updated": "2026-05-18"
+      "list_price_usd": 7027.99,
+      "msrp_usd": 9009.0,
+      "price_source": "CDW advertised price, cdw.com #5669097; web snapshot 2026-10-14",
+      "price_updated": "2026-10-14"
     },
     {
       "vendor": "Vertiv",
       "family": "Vertiv Liebert GXT5 (VRLA)",
-      "model": "GXT5-6000IRT5UXL",
+      "model": "GXT5-6000MVRT4UXLN",
       "capacity_va": 6000,
       "capacity_w": 6000,
-      "form_factor": "Rack/Tower 5U",
+      "form_factor": "Rack/Tower 4U",
       "battery_type": "vrla",
       "modular": false,
-      "notes": "VRLA. 6 kVA online with optional EBC battery cabinets for extended runtime.",
+      "notes": "VRLA. 6 kVA online, 208/120 V (MV), unity PF, RDU101 card included; optional GXT5-EBC144VRT2U battery cabinets for extended runtime. Runtime: Vertiv brochure SL-70505 internal battery (matches vertiv_pods.json chassis_runtimes).",
       "runtime_curve": {
-        "25": 12,
-        "50": 4,
-        "75": 2,
-        "100": 1
+        "25": 26,
+        "50": 10,
+        "75": 5,
+        "100": 4
       },
-      "list_price_usd": 6538.9,
-      "price_updated": "2026-05-18"
+      "list_price_usd": 6571.99,
+      "msrp_usd": 9467.0,
+      "price_source": "CDW advertised price, cdw.com #5673713; web snapshot 2026-10-14",
+      "price_updated": "2026-10-14"
+    },
+    {
+      "vendor": "Vertiv",
+      "family": "Vertiv Liebert GXT5 Lithium-Ion",
+      "model": "GXT5LI-1000LVRT2UXL",
+      "capacity_va": 1000,
+      "capacity_w": 1000,
+      "form_factor": "Rack/Tower 2U",
+      "battery_type": "lithium_ion",
+      "modular": false,
+      "input_voltage_v": 120,
+      "input_phase": 1,
+      "input_plug": "NEMA 5-15P",
+      "notes": "Li-Ion (LiFePO4). Internal battery. (6) NEMA 5-15R, 4 programmable. Maintenance bypass via MicroPOD MP2-115*. Up to 8 VEBCLI-48VRT1U EBCs. 5-yr warranty on UPS and battery. -XLN suffix adds a factory RDU120 network card.",
+      "runtime_curve": {
+        "50": 28,
+        "100": 13
+      },
+      "runtime_curve_watts": [
+        {
+          "load_w": 500.0,
+          "minutes": 28.0
+        },
+        {
+          "load_w": 1000.0,
+          "minutes": 13.0
+        }
+      ],
+      "runtime_source_url": "Vertiv brochure SL-70925 (R06/26), p7",
+      "list_price_usd": 2049.99,
+      "msrp_usd": 2917.0,
+      "price_source": "CDW sign-in price, cdw.com #6990386; web snapshot 2026-10-14",
+      "price_updated": "2026-10-14"
+    },
+    {
+      "vendor": "Vertiv",
+      "family": "Vertiv Liebert GXT5 Lithium-Ion",
+      "model": "GXT5LI-1500LVRT2UXL",
+      "capacity_va": 1500,
+      "capacity_w": 1350,
+      "form_factor": "Rack/Tower 2U",
+      "battery_type": "lithium_ion",
+      "modular": false,
+      "input_voltage_v": 120,
+      "input_phase": 1,
+      "input_plug": "NEMA 5-15P",
+      "notes": "Li-Ion (LiFePO4). Internal battery. (6) NEMA 5-15R, 4 programmable. Best full-load runtime in the 1-3 kVA Li-Ion range (14 min). Maintenance bypass via MicroPOD MP2-115*. Up to 8 VEBCLI-48VRT1U EBCs.",
+      "runtime_curve": {
+        "50": 28,
+        "100": 14
+      },
+      "runtime_curve_watts": [
+        {
+          "load_w": 675.0,
+          "minutes": 28.0
+        },
+        {
+          "load_w": 1350.0,
+          "minutes": 14.0
+        }
+      ],
+      "runtime_source_url": "Vertiv brochure SL-70925 (R06/26), p7",
+      "list_price_usd": 2706.99,
+      "msrp_usd": 3851.0,
+      "price_source": "CDW advertised price, cdw.com #6994432; web snapshot 2026-10-14",
+      "price_updated": "2026-10-14"
+    },
+    {
+      "vendor": "Vertiv",
+      "family": "Vertiv Liebert GXT5 Lithium-Ion",
+      "model": "GXT5LI-2000LVRT2UXL",
+      "capacity_va": 2000,
+      "capacity_w": 1800,
+      "form_factor": "Rack/Tower 2U",
+      "battery_type": "lithium_ion",
+      "modular": false,
+      "input_voltage_v": 120,
+      "input_phase": 1,
+      "input_plug": "NEMA L5-20P",
+      "notes": "Li-Ion (LiFePO4). Internal battery. (1) NEMA L5-20R + (6) 5-15/20R, 4 programmable. Ships with an L5-20 to 5-20P adapter. Maintenance bypass via MicroPOD MP2-120*. Up to 8 VEBCLI-48VRT1U EBCs.",
+      "runtime_curve": {
+        "50": 22.5,
+        "100": 10.5
+      },
+      "runtime_curve_watts": [
+        {
+          "load_w": 900.0,
+          "minutes": 22.5
+        },
+        {
+          "load_w": 1800.0,
+          "minutes": 10.5
+        }
+      ],
+      "runtime_source_url": "Vertiv brochure SL-70925 (R06/26), p7",
+      "list_price_usd": 3505.99,
+      "msrp_usd": 4695.0,
+      "price_source": "CDW advertised price, cdw.com #7155550; web snapshot 2026-10-14",
+      "price_updated": "2026-10-14"
+    },
+    {
+      "vendor": "Vertiv",
+      "family": "Vertiv Liebert GXT5 Lithium-Ion",
+      "model": "GXT5LI-3000LVRT2UXL",
+      "capacity_va": 3000,
+      "capacity_w": 2700,
+      "form_factor": "Rack/Tower 2U",
+      "battery_type": "lithium_ion",
+      "modular": false,
+      "input_voltage_v": 120,
+      "input_phase": 1,
+      "input_plug": "NEMA L5-30P",
+      "notes": "Li-Ion (LiFePO4). Internal battery. (1) NEMA L5-30R + (6) 5-15/20R, 4 programmable. Short stock full-load runtime (6.5 min) — add EBCs for a 10 min+ target. Maintenance bypass via MicroPOD MP2-130*. Up to 8 VEBCLI-48VRT1U EBCs.",
+      "runtime_curve": {
+        "50": 15,
+        "100": 6.5
+      },
+      "runtime_curve_watts": [
+        {
+          "load_w": 1350.0,
+          "minutes": 15.0
+        },
+        {
+          "load_w": 2700.0,
+          "minutes": 6.5
+        }
+      ],
+      "runtime_source_url": "Vertiv brochure SL-70925 (R06/26), p7",
+      "list_price_usd": 5968.99,
+      "msrp_usd": 7994.0,
+      "price_source": "CDW advertised price, cdw.com #7155549; web snapshot 2026-10-14",
+      "price_updated": "2026-10-14"
+    },
+    {
+      "vendor": "Vertiv",
+      "family": "Vertiv Liebert GXT5 Lithium-Ion",
+      "model": "GXT5LI-5000MVRT3UXLN",
+      "capacity_va": 5000,
+      "capacity_w": 5000,
+      "form_factor": "Rack/Tower 3U",
+      "battery_type": "lithium_ion",
+      "modular": false,
+      "input_voltage_v": 208,
+      "input_phase": 1,
+      "input_plug": "NEMA L14-30P (10 ft attached)",
+      "notes": "Li-Ion (LiFePO4), unity PF (W = VA). No internal battery — ships with (1) VEBCLI-192VRT1U EBC, and the runtime figures are with that EBC installed. Integrated Zero-U maintenance bypass with power distribution, so no output POD is needed; expand receptacles with a Liebert rack PDU (VP0N3202 / VP0N3242). (2) NEMA L14-30R chassis output. 208/120 VAC default, 240/120 user-configurable.",
+      "runtime_curve": {
+        "50": 25,
+        "100": 12
+      },
+      "runtime_curve_watts": [
+        {
+          "load_w": 2500.0,
+          "minutes": 25.0
+        },
+        {
+          "load_w": 5000.0,
+          "minutes": 12.0
+        }
+      ],
+      "runtime_source_url": "Vertiv brochure SL-70996 (R03/26), p8",
+      "list_price_usd": 10635.99,
+      "msrp_usd": 15135.0,
+      "price_source": "CDW advertised price, cdw.com #7158402; web snapshot 2026-10-14",
+      "price_updated": "2026-10-14"
+    },
+    {
+      "vendor": "Vertiv",
+      "family": "Vertiv Liebert GXT5 Lithium-Ion",
+      "model": "GXT5LI-6000MVRT3UXLN",
+      "capacity_va": 6000,
+      "capacity_w": 6000,
+      "form_factor": "Rack/Tower 3U",
+      "battery_type": "lithium_ion",
+      "modular": false,
+      "input_voltage_v": 208,
+      "input_phase": 1,
+      "input_plug": "Hardwired (L1-L2-N-G)",
+      "notes": "Li-Ion (LiFePO4), unity PF (W = VA). No internal battery — ships with (1) VEBCLI-192VRT1U EBC, and the runtime figures are with that EBC installed. Integrated Zero-U maintenance bypass with power distribution, so no output POD is needed; hardwired output feeds a Liebert rack PDU (VP0N6200 / VP0N6202 / VP0N6222 / VP0N6281 / VP4N6003). 208/120 VAC default.",
+      "runtime_curve": {
+        "50": 21,
+        "100": 10
+      },
+      "runtime_curve_watts": [
+        {
+          "load_w": 3000.0,
+          "minutes": 21.0
+        },
+        {
+          "load_w": 6000.0,
+          "minutes": 10.0
+        }
+      ],
+      "runtime_source_url": "Vertiv brochure SL-70996 (R03/26), p8",
+      "list_price_usd": 11846.99,
+      "msrp_usd": 16858.0,
+      "price_source": "CDW advertised price, cdw.com #7158403; web snapshot 2026-10-14",
+      "price_updated": "2026-10-14"
+    },
+    {
+      "vendor": "Vertiv",
+      "family": "Vertiv Liebert GXT5 Lithium-Ion",
+      "model": "GXT5LI-8000MVRT4UXLN",
+      "capacity_va": 8000,
+      "capacity_w": 8000,
+      "form_factor": "Rack/Tower 4U",
+      "battery_type": "lithium_ion",
+      "modular": false,
+      "input_voltage_v": 208,
+      "input_phase": 1,
+      "input_plug": "Hardwired (L1-L2-N-G)",
+      "notes": "Li-Ion (LiFePO4), unity PF (W = VA). No internal battery — ships with (2) VEBCLI-192VRT1U EBCs, and the runtime figures are with both installed. Integrated Zero-U maintenance bypass with power distribution, so no output POD is needed; hardwired output feeds a Liebert rack PDU (VP0N6200 / VP0N6202 / VP0N6222 / VP0N6281 / VP4N6003).",
+      "runtime_curve": {
+        "50": 27,
+        "100": 13
+      },
+      "runtime_curve_watts": [
+        {
+          "load_w": 4000.0,
+          "minutes": 27.0
+        },
+        {
+          "load_w": 8000.0,
+          "minutes": 13.0
+        }
+      ],
+      "runtime_source_url": "Vertiv brochure SL-70996 (R03/26), p8",
+      "list_price_usd": 12754.99,
+      "msrp_usd": 18150.0,
+      "price_source": "CDW advertised price, cdw.com #7158405; web snapshot 2026-10-14",
+      "price_updated": "2026-10-14"
+    },
+    {
+      "vendor": "Vertiv",
+      "family": "Vertiv Liebert GXT5 Lithium-Ion",
+      "model": "GXT5LI-10KMVRT4UXLN",
+      "capacity_va": 10000,
+      "capacity_w": 10000,
+      "form_factor": "Rack/Tower 4U",
+      "battery_type": "lithium_ion",
+      "modular": false,
+      "input_voltage_v": 208,
+      "input_phase": 1,
+      "input_plug": "Hardwired (L1-L2-N-G)",
+      "notes": "Li-Ion (LiFePO4), unity PF (W = VA). No internal battery — ships with (2) VEBCLI-192VRT1U EBCs, and the runtime figures are with both installed. Integrated Zero-U maintenance bypass with power distribution, so no output POD is needed; hardwired output feeds a Liebert rack PDU (VP0N6200 / VP0N6202 / VP0N6222 / VP0N6281 / VP4N6003). Above closet scale — consider a building-level modular UPS from ups_modular_units.json instead.",
+      "runtime_curve": {
+        "50": 21,
+        "100": 10
+      },
+      "runtime_curve_watts": [
+        {
+          "load_w": 5000.0,
+          "minutes": 21.0
+        },
+        {
+          "load_w": 10000.0,
+          "minutes": 10.0
+        }
+      ],
+      "runtime_source_url": "Vertiv brochure SL-70996 (R03/26), p8",
+      "list_price_usd": 16107.99,
+      "msrp_usd": 23687.0,
+      "price_source": "CDW advertised price, cdw.com #7158407; web snapshot 2026-10-14",
+      "price_updated": "2026-10-14"
+    },
+    {
+      "vendor": "Vertiv",
+      "family": "Vertiv Liebert GXT5 Lithium-Ion",
+      "model": "GXT5LI-5KL630RT3UXLN",
+      "capacity_va": 5000,
+      "capacity_w": 4900,
+      "form_factor": "Rack/Tower 3U",
+      "battery_type": "lithium_ion",
+      "modular": false,
+      "input_voltage_v": 208,
+      "input_phase": 1,
+      "input_plug": "NEMA L6-30P",
+      "notes": "Li-Ion (LiFePO4). 208 VAC default (200-240 user-configurable) — the 208 V single-phase option in this range. No internal battery; ships with (1) VEBCLI-192VRT1U EBC, and the runtime figures are with that EBC installed. Integrated Zero-U maintenance bypass with power distribution, so no output POD is needed; expand receptacles with a Liebert rack PDU (VP0N3223). (2) L6-30R chassis output.",
+      "runtime_curve": {
+        "50": 25,
+        "100": 11
+      },
+      "runtime_curve_watts": [
+        {
+          "load_w": 2450.0,
+          "minutes": 25.0
+        },
+        {
+          "load_w": 4900.0,
+          "minutes": 11.0
+        }
+      ],
+      "runtime_source_url": "Vertiv brochure SL-70996 (R03/26), p9",
+      "list_price_usd": 9098.99,
+      "msrp_usd": 12947.0,
+      "price_source": "CDW advertised price, cdw.com #7750629; web snapshot 2026-10-14",
+      "price_updated": "2026-10-14"
+    },
+    {
+      "vendor": "Vertiv",
+      "family": "Vertiv Liebert GXT5 Lithium-Ion",
+      "model": "GXT5LI-6000GVRT3UXLN",
+      "capacity_va": 6000,
+      "capacity_w": 6000,
+      "form_factor": "Rack/Tower 3U",
+      "battery_type": "lithium_ion",
+      "modular": false,
+      "input_voltage_v": 230,
+      "input_phase": 1,
+      "input_plug": "Hardwired (L1-L2/N-G)",
+      "notes": "Li-Ion (LiFePO4), unity PF. 230 VAC DEFAULT (200-240 user-configurable) — confirm the unit is set to 208 V before using on a US 120/208 V service. No internal battery; ships with (1) VEBCLI-192VRT1U EBC, and the runtime figures are with that EBC installed. Integrated Zero-U maintenance bypass; hardwired output feeds a Liebert rack PDU (VP0N6263 / VP0N6242 / VP0G7200 / VP4G7006 / VP4N6013).",
+      "runtime_curve": {
+        "50": 19,
+        "100": 9
+      },
+      "runtime_curve_watts": [
+        {
+          "load_w": 3000.0,
+          "minutes": 19.0
+        },
+        {
+          "load_w": 6000.0,
+          "minutes": 9.0
+        }
+      ],
+      "runtime_source_url": "Vertiv brochure SL-70996 (R03/26), p9",
+      "list_price_usd": 10376.99,
+      "msrp_usd": 13880.0,
+      "price_source": "CDW advertised price, cdw.com #8226487; web snapshot 2026-10-14",
+      "price_updated": "2026-10-14"
+    },
+    {
+      "vendor": "Vertiv",
+      "family": "Vertiv Liebert GXT5 Lithium-Ion",
+      "model": "GXT5LI-8000GVRT3UXLN",
+      "capacity_va": 8000,
+      "capacity_w": 8000,
+      "form_factor": "Rack/Tower 3U",
+      "battery_type": "lithium_ion",
+      "modular": false,
+      "input_voltage_v": 230,
+      "input_phase": 1,
+      "input_plug": "Hardwired (L1-L2/N-G)",
+      "notes": "Li-Ion (LiFePO4), unity PF. 230 VAC DEFAULT (200-240 user-configurable) — confirm the unit is set to 208 V before using on a US 120/208 V service. No internal battery; ships with (1) VEBCLI-192VRT1U EBC, and the runtime figures are with that EBC installed. Only 5 min at full load on the included EBC — plan on additional EBCs. Integrated Zero-U maintenance bypass; hardwired output feeds a Liebert rack PDU.",
+      "runtime_curve": {
+        "50": 15,
+        "100": 5
+      },
+      "runtime_curve_watts": [
+        {
+          "load_w": 4000.0,
+          "minutes": 15.0
+        },
+        {
+          "load_w": 8000.0,
+          "minutes": 5.0
+        }
+      ],
+      "runtime_source_url": "Vertiv brochure SL-70996 (R03/26), p9"
+    },
+    {
+      "vendor": "Vertiv",
+      "family": "Vertiv Liebert GXT5 Lithium-Ion",
+      "model": "GXT5LI-10KGVRT3UXLN",
+      "capacity_va": 10000,
+      "capacity_w": 10000,
+      "form_factor": "Rack/Tower 3U",
+      "battery_type": "lithium_ion",
+      "modular": false,
+      "input_voltage_v": 230,
+      "input_phase": 1,
+      "input_plug": "Hardwired (L1-L2/N-G)",
+      "notes": "Li-Ion (LiFePO4), unity PF. 230 VAC DEFAULT (200-240 user-configurable) — confirm the unit is set to 208 V before using on a US 120/208 V service. No internal battery; ships with (1) VEBCLI-192VRT1U EBC, and the runtime figures are with that EBC installed. Only 4 min at full load on the included EBC — plan on additional EBCs. Above closet scale — consider a building-level modular UPS from ups_modular_units.json instead.",
+      "runtime_curve": {
+        "50": 11,
+        "100": 4
+      },
+      "runtime_curve_watts": [
+        {
+          "load_w": 5000.0,
+          "minutes": 11.0
+        },
+        {
+          "load_w": 10000.0,
+          "minutes": 4.0
+        }
+      ],
+      "runtime_source_url": "Vertiv brochure SL-70996 (R03/26), p9",
+      "list_price_usd": 13667.99,
+      "msrp_usd": 18309.0,
+      "price_source": "CDW sign-in price, cdw.com #7898017; web snapshot 2026-10-14",
+      "price_updated": "2026-10-14"
     }
   ]
 }

@@ -1,8 +1,9 @@
 {
   "_metadata": {
     "description": "Switch power database. Values are typical from manufacturer datasheets; verify against the specific configuration you are deploying. system_watts is idle/non-PoE system draw. poe_budget_watts is the maximum PoE the switch can deliver — actual closet heat depends on how much of that budget is utilized to remote devices. role describes the network-topology tier (Cisco/Meraki: Access/Distribution/Core; Arista: Access Leaf/Floor Spine/Building Spine). The Configure-APs dialog uses role to filter which switches can host APs (access-tier only).",
-    "last_updated": "2026-05",
-    "schema_version": 2
+    "last_updated": "2026-10",
+    "schema_version": 2,
+    "pricing_note": "list_price_usd is a street price (CDW advertised or sign-in price from a cdw.com web snapshot, see price_source) unless price_source says otherwise; msrp_usd is the manufacturer list price CDW showed alongside it. Prices are planning figures, not quotes."
   },
   "switches": [
     {
@@ -13,7 +14,11 @@
       "poe_class": "None",
       "system_watts": 50,
       "poe_budget_watts": 0,
-      "role": "Access"
+      "role": "Access",
+      "list_price_usd": 2048.99,
+      "price_updated": "2026-10-14",
+      "price_source": "CDW sign-in price, cdw.com #5380349, SKU C9200L-24T-4G-E; web snapshot 2026-10-14",
+      "msrp_usd": 2879.25
     },
     {
       "vendor": "Cisco Catalyst",
@@ -23,7 +28,11 @@
       "poe_class": "None",
       "system_watts": 80,
       "poe_budget_watts": 0,
-      "role": "Access"
+      "role": "Access",
+      "list_price_usd": 3532.0,
+      "price_updated": "2026-10-14",
+      "price_source": "CDW sign-in price, cdw.com #5380352, SKU C9200L-48T-4G-E; web snapshot 2026-10-14",
+      "msrp_usd": 4963.41
     },
     {
       "vendor": "Cisco Catalyst",
@@ -33,7 +42,11 @@
       "poe_class": "PoE+",
       "system_watts": 60,
       "poe_budget_watts": 370,
-      "role": "Access"
+      "role": "Access",
+      "list_price_usd": 2742.0,
+      "price_updated": "2026-10-14",
+      "price_source": "CDW advertised price, cdw.com #5432372, SKU C9200-24P-E; web snapshot 2026-10-14",
+      "msrp_usd": 4003.52
     },
     {
       "vendor": "Cisco Catalyst",
@@ -43,7 +56,11 @@
       "poe_class": "PoE+",
       "system_watts": 90,
       "poe_budget_watts": 740,
-      "role": "Access"
+      "role": "Access",
+      "list_price_usd": 7533.99,
+      "price_updated": "2026-10-14",
+      "price_source": "CDW sign-in price, cdw.com #5396216, SKU C9200-48P-E; web snapshot 2026-10-14",
+      "msrp_usd": 10586.09
     },
     {
       "vendor": "Cisco Catalyst",
@@ -53,7 +70,11 @@
       "poe_class": "PoE+",
       "system_watts": 110,
       "poe_budget_watts": 740,
-      "role": "Access"
+      "role": "Access",
+      "list_price_usd": 8015.99,
+      "price_updated": "2026-10-14",
+      "price_source": "CDW advertised price, cdw.com #5962564, SKU C9200-48PXG-E; web snapshot 2026-10-14",
+      "msrp_usd": 11264.29
     },
     {
       "vendor": "Cisco Catalyst",
@@ -63,7 +84,11 @@
       "poe_class": "None",
       "system_watts": 70,
       "poe_budget_watts": 0,
-      "role": "Access"
+      "role": "Access",
+      "list_price_usd": 5292.99,
+      "price_updated": "2026-10-14",
+      "price_source": "CDW sign-in price, cdw.com #4727582, SKU C9300-24T-E; web snapshot 2026-10-14",
+      "msrp_usd": 8152.98
     },
     {
       "vendor": "Cisco Catalyst",
@@ -73,7 +98,11 @@
       "poe_class": "None",
       "system_watts": 110,
       "poe_budget_watts": 0,
-      "role": "Access"
+      "role": "Access",
+      "list_price_usd": 8082.99,
+      "price_updated": "2026-10-14",
+      "price_source": "CDW sign-in price, cdw.com #4849831, SKU C9300-48T-E; web snapshot 2026-10-14",
+      "msrp_usd": 13488.8
     },
     {
       "vendor": "Cisco Catalyst",
@@ -83,7 +112,11 @@
       "poe_class": "PoE+",
       "system_watts": 90,
       "poe_budget_watts": 445,
-      "role": "Access"
+      "role": "Access",
+      "list_price_usd": 5806.99,
+      "price_updated": "2026-10-14",
+      "price_source": "CDW advertised price, cdw.com #4851639, SKU C9300-24P-E; web snapshot 2026-10-14",
+      "msrp_usd": 9619.29
     },
     {
       "vendor": "Cisco Catalyst",
@@ -93,7 +126,11 @@
       "poe_class": "PoE+",
       "system_watts": 130,
       "poe_budget_watts": 822,
-      "role": "Access"
+      "role": "Access",
+      "list_price_usd": 10345.99,
+      "price_updated": "2026-10-14",
+      "price_source": "CDW sign-in price, cdw.com #4696730, SKU C9300-48P-E; web snapshot 2026-10-14",
+      "msrp_usd": 16249.15
     },
     {
       "vendor": "Cisco Catalyst",
@@ -103,7 +140,11 @@
       "poe_class": "UPOE",
       "system_watts": 100,
       "poe_budget_watts": 830,
-      "role": "Access"
+      "role": "Access",
+      "list_price_usd": 7394.99,
+      "price_updated": "2026-10-14",
+      "price_source": "CDW sign-in price, cdw.com #4729160, SKU C9300-24U-E; web snapshot 2026-10-14",
+      "msrp_usd": 10391.36
     },
     {
       "vendor": "Cisco Catalyst",
@@ -113,7 +154,11 @@
       "poe_class": "UPOE",
       "system_watts": 140,
       "poe_budget_watts": 1100,
-      "role": "Access"
+      "role": "Access",
+      "list_price_usd": 12993.99,
+      "price_updated": "2026-10-14",
+      "price_source": "CDW sign-in price, cdw.com #4696722, SKU C9300-48U-E; web snapshot 2026-10-14",
+      "msrp_usd": 17945.24
     },
     {
       "vendor": "Cisco Catalyst",
@@ -123,7 +168,11 @@
       "poe_class": "UPOE",
       "system_watts": 130,
       "poe_budget_watts": 880,
-      "role": "Access"
+      "role": "Access",
+      "list_price_usd": 15494.99,
+      "price_updated": "2026-10-14",
+      "price_source": "CDW advertised price, cdw.com #4756234, SKU C9300-24UX-E; web snapshot 2026-10-14",
+      "msrp_usd": 21774.25
     },
     {
       "vendor": "Cisco Catalyst",
@@ -133,7 +182,11 @@
       "poe_class": "UPOE",
       "system_watts": 175,
       "poe_budget_watts": 1100,
-      "role": "Access"
+      "role": "Access",
+      "list_price_usd": 12992.99,
+      "price_updated": "2026-10-14",
+      "price_source": "CDW sign-in price, cdw.com #5023169, SKU C9300-48UXM-E; web snapshot 2026-10-14",
+      "msrp_usd": 21682.56
     },
     {
       "vendor": "Cisco Catalyst",
@@ -143,7 +196,11 @@
       "poe_class": "None",
       "system_watts": 220,
       "poe_budget_watts": 0,
-      "role": "Distribution"
+      "role": "Distribution",
+      "list_price_usd": 27711.99,
+      "price_updated": "2026-10-14",
+      "price_source": "CDW advertised price, cdw.com #6543298, SKU C9300X-24Y-E (the -A variant was listed lower at $21,759.99); web snapshot 2026-10-14",
+      "msrp_usd": 38942.11
     },
     {
       "vendor": "Cisco Catalyst",
@@ -153,7 +210,11 @@
       "poe_class": "UPOE+",
       "system_watts": 220,
       "poe_budget_watts": 1570,
-      "role": "Access"
+      "role": "Access",
+      "list_price_usd": 17095.99,
+      "price_updated": "2026-10-14",
+      "price_source": "CDW sign-in price, cdw.com #6901701, SKU C9300X-48HX-E; web snapshot 2026-10-14",
+      "msrp_usd": 24023.54
     },
     {
       "vendor": "Cisco Meraki",
@@ -183,7 +244,11 @@
       "poe_class": "PoE+",
       "system_watts": 40,
       "poe_budget_watts": 370,
-      "role": "Access"
+      "role": "Access",
+      "list_price_usd": 2218.99,
+      "price_updated": "2026-10-14",
+      "price_source": "CDW advertised price, cdw.com #4834761, SKU MS120-24P-HW; web snapshot 2026-10-14",
+      "msrp_usd": 3588.91
     },
     {
       "vendor": "Cisco Meraki",
@@ -213,7 +278,11 @@
       "poe_class": "PoE+",
       "system_watts": 50,
       "poe_budget_watts": 370,
-      "role": "Access"
+      "role": "Access",
+      "list_price_usd": 3278.99,
+      "price_updated": "2026-10-14",
+      "price_source": "CDW advertised price, cdw.com #5625387, SKU MS125-24P-HW; web snapshot 2026-10-14",
+      "msrp_usd": 4607.34
     },
     {
       "vendor": "Cisco Meraki",
@@ -223,7 +292,11 @@
       "poe_class": "PoE+",
       "system_watts": 80,
       "poe_budget_watts": 740,
-      "role": "Access"
+      "role": "Access",
+      "list_price_usd": 5188.99,
+      "price_updated": "2026-10-14",
+      "price_source": "CDW advertised price, cdw.com #5625996, SKU MS125-48FP-HW; web snapshot 2026-10-14",
+      "msrp_usd": 7290.87
     },
     {
       "vendor": "Cisco Meraki",
@@ -233,7 +306,10 @@
       "poe_class": "None",
       "system_watts": 50,
       "poe_budget_watts": 0,
-      "role": "Access"
+      "role": "Access",
+      "list_price_usd": 3078.99,
+      "price_updated": "2026-10-14",
+      "price_source": "CDW advertised price, cdw.com #4877190, SKU MS210-24-HW; web snapshot 2026-10-14"
     },
     {
       "vendor": "Cisco Meraki",
@@ -243,7 +319,11 @@
       "poe_class": "None",
       "system_watts": 75,
       "poe_budget_watts": 0,
-      "role": "Access"
+      "role": "Access",
+      "list_price_usd": 4145.99,
+      "price_updated": "2026-10-14",
+      "price_source": "CDW advertised price, cdw.com #4909159, SKU MS210-48-HW; web snapshot 2026-10-14",
+      "msrp_usd": 5301.4
     },
     {
       "vendor": "Cisco Meraki",
@@ -253,7 +333,10 @@
       "poe_class": "PoE+",
       "system_watts": 70,
       "poe_budget_watts": 370,
-      "role": "Access"
+      "role": "Access",
+      "list_price_usd": 4287.99,
+      "price_updated": "2026-10-14",
+      "price_source": "CDW sign-in price, cdw.com #4404162, SKU MS225-24P-HW; web snapshot 2026-10-14"
     },
     {
       "vendor": "Cisco Meraki",
@@ -263,7 +346,10 @@
       "poe_class": "PoE+",
       "system_watts": 100,
       "poe_budget_watts": 740,
-      "role": "Access"
+      "role": "Access",
+      "list_price_usd": 6844.99,
+      "price_updated": "2026-10-14",
+      "price_source": "CDW sign-in price, cdw.com #4401578, SKU MS225-48FP-HW; web snapshot 2026-10-14"
     },
     {
       "vendor": "Cisco Meraki",
@@ -303,7 +389,11 @@
       "poe_class": "UPOE",
       "system_watts": 110,
       "poe_budget_watts": 822,
-      "role": "Access"
+      "role": "Access",
+      "list_price_usd": 4329.99,
+      "price_updated": "2026-10-14",
+      "price_source": "CDW advertised price, cdw.com #5893163, SKU MS390-24P-HW; web snapshot 2026-10-14",
+      "msrp_usd": 6039.3
     },
     {
       "vendor": "Cisco Meraki",
@@ -445,8 +535,8 @@
       "poe_class": "PoE++ (Type 4, 90W)",
       "system_watts": 168,
       "poe_budget_watts": 1775,
-      "role": "Floor Spine",
-      "notes": "Campus leaf. 48x 10G/mGig 90W PoE + 4x25G + 2x100G. With 2x 1050W PSUs (PWR-1021-AC-RED), PoE budget per Arista QSG is 1775W. Typical role: Building/Closet Spine (BSP/CSP) at small sites."
+      "role": "Access Leaf",
+      "notes": "Campus leaf. 48x 10G/mGig 90W PoE + 4x25G + 2x100G. With 2x 1050W PSUs (PWR-1021-AC-RED), PoE budget per Arista QSG is 1775W — not enough for full 90W bt on all 48 ports simultaneously. Typical role: Closet Leaf (CLF) at small/light-PoE sites; use the 2000W-PSU variant for full-PoE-density closets."
     },
     {
       "vendor": "Arista",

@@ -2,7 +2,7 @@
   "_metadata": {
     "description": "Large modular UPS catalog for building-level / MDF deployments at or above 15 kVA. Models prioritize: (1) modular hot-swap power and battery modules so capacity can grow incrementally and any single module failure is non-disruptive, (2) lithium-ion batteries for ~10-year life and reduced footprint vs VRLA. Includes single-phase rack-tower hybrids and three-phase floor-standing systems. Three-phase entries assume 208V or 480V input — the recommendation engine includes both, the user picks the voltage class that matches their service.",
     "schema_version": 1,
-    "last_updated": "2026-05"
+    "last_updated": "2026-10"
   },
   "ups_modular_units": [
     {

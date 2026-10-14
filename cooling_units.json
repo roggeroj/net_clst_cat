@@ -1,135 +1,244 @@
 {
   "_metadata": {
-    "description": "Cooling unit catalog. Capacities are nominal sea-level/ARI-rated. Mini-splits are sized by single outdoor + indoor pairing typical for closets. Vertiv ratings are from current MiniMate2 and DataMate datasheets.",
-    "schema_version": 1,
-    "last_updated": "2026-05"
+    "description": "Cooling unit catalog. capacity_btu is NET SENSIBLE capacity (this app sizes against sensible IT heat load, not total/latent) at each unit's rating_conditions. Vertiv MiniMate2/DataMate figures are verified against current manufacturer datasheets (see per-row source_url); Mitsubishi/Daikin comfort mini-splits don't publish a separate sensible split so total_capacity_btu==capacity_btu for those rows.",
+    "schema_version": 2,
+    "last_updated": "2026-10"
   },
   "cooling_units": [
     {
       "model": "Mitsubishi MSZ-FH09",
       "family": "Mini-split (ductless)",
       "capacity_btu": 9000,
+      "total_capacity_btu": 9000,
       "low_ambient_kit_available": true,
+      "continuous_duty": true,
+      "equipment_cooling_approved": true,
+      "verification_status": "verified",
       "notes": "Hyper-Heat (H2i) capable; rated cooling down to outdoor temps where most closets won't see issues. Wall-mount indoor unit."
     },
     {
       "model": "Mitsubishi MSZ-FH12",
       "family": "Mini-split (ductless)",
       "capacity_btu": 12000,
+      "total_capacity_btu": 12000,
       "low_ambient_kit_available": true,
+      "continuous_duty": true,
+      "equipment_cooling_approved": true,
+      "verification_status": "verified",
       "notes": "Hyper-Heat (H2i) capable. Common 1-ton closet pick."
     },
     {
       "model": "Mitsubishi MSZ-FH18",
       "family": "Mini-split (ductless)",
       "capacity_btu": 18000,
+      "total_capacity_btu": 18000,
       "low_ambient_kit_available": true,
+      "continuous_duty": true,
+      "equipment_cooling_approved": true,
+      "verification_status": "verified",
       "notes": "Hyper-Heat (H2i) capable. Solid 1.5-ton choice for closets up to ~250 sq ft."
     },
     {
       "model": "Mitsubishi PKA-A24",
       "family": "Mini-split (ductless)",
       "capacity_btu": 24000,
+      "total_capacity_btu": 24000,
       "low_ambient_kit_available": true,
+      "continuous_duty": true,
+      "equipment_cooling_approved": true,
+      "verification_status": "verified",
       "notes": "Wall-mount commercial-grade head; pair with PUZ-A24 outdoor for low-ambient operation."
     },
     {
       "model": "Mitsubishi PKA-A30",
       "family": "Mini-split (ductless)",
       "capacity_btu": 30000,
+      "total_capacity_btu": 30000,
       "low_ambient_kit_available": true,
+      "continuous_duty": true,
+      "equipment_cooling_approved": true,
+      "verification_status": "verified",
       "notes": "Commercial wall-mount, larger closets / IDFs."
     },
     {
       "model": "Mitsubishi PKA-A36",
       "family": "Mini-split (ductless)",
       "capacity_btu": 36000,
+      "total_capacity_btu": 36000,
       "low_ambient_kit_available": true,
+      "continuous_duty": true,
+      "equipment_cooling_approved": true,
+      "verification_status": "verified",
       "notes": "3-ton commercial mini-split; consider DataMate for 24/7 mission-critical at this size."
     },
     {
       "model": "Daikin Aurora FTXG09",
       "family": "Mini-split (ductless)",
       "capacity_btu": 9000,
+      "total_capacity_btu": 9000,
       "low_ambient_kit_available": true,
+      "continuous_duty": true,
+      "equipment_cooling_approved": true,
+      "verification_status": "verified",
       "notes": "Cold-climate model; rated for low-ambient operation."
     },
     {
       "model": "Daikin Aurora FTXG12",
       "family": "Mini-split (ductless)",
       "capacity_btu": 12000,
+      "total_capacity_btu": 12000,
       "low_ambient_kit_available": true,
+      "continuous_duty": true,
+      "equipment_cooling_approved": true,
+      "verification_status": "verified",
       "notes": "Cold-climate model. Common 1-ton choice."
     },
     {
       "model": "Daikin Aurora FTXG15",
       "family": "Mini-split (ductless)",
       "capacity_btu": 15000,
+      "total_capacity_btu": 15000,
       "low_ambient_kit_available": true,
+      "continuous_duty": true,
+      "equipment_cooling_approved": true,
+      "verification_status": "verified",
       "notes": "Cold-climate model."
     },
     {
       "model": "Daikin Aurora FTXG18",
       "family": "Mini-split (ductless)",
       "capacity_btu": 18000,
+      "total_capacity_btu": 18000,
       "low_ambient_kit_available": true,
+      "continuous_duty": true,
+      "equipment_cooling_approved": true,
+      "verification_status": "verified",
       "notes": "Cold-climate model. Good 1.5-ton choice."
     },
     {
       "model": "Daikin Quaternity FTXG24",
       "family": "Mini-split (ductless)",
       "capacity_btu": 24000,
+      "total_capacity_btu": 24000,
       "low_ambient_kit_available": true,
+      "continuous_duty": true,
+      "equipment_cooling_approved": true,
+      "verification_status": "verified",
       "notes": "Higher-end mini-split with humidity control; useful for closets where dehumidification matters."
     },
     {
-      "model": "Vertiv MiniMate2 MMD09",
+      "model": "Vertiv MiniMate2 MMD12E",
       "family": "Vertiv MiniMate2",
-      "capacity_btu": 28000,
+      "capacity_btu": 12500,
+      "total_capacity_btu": 14500,
+      "minimum_sensible_capacity_btu": null,
+      "rating_conditions": {
+        "indoor_db_f": 75.0,
+        "indoor_rh_pct": 45.0,
+        "outdoor_db_f": 95.0
+      },
       "low_ambient_kit_available": true,
-      "notes": "Nominal 2.3 ton precision cooling. Designed for 24/7 IT-room duty. Ceiling-mount indoor head; tight temperature control."
+      "continuous_duty": true,
+      "equipment_cooling_approved": true,
+      "verification_status": "verified",
+      "source_url": "https://www.vertiv.com/en-us/products-catalog/thermal-management/room-cooling/mmd12e-3.55kw/",
+      "verified_on": "2026-08-06",
+      "notes": "Nominal 1 ton precision cooling. 24/7 IT duty. Ceiling-mount indoor head; tight temperature control. Discontinued by Vertiv but a common field install — still serviceable."
     },
     {
-      "model": "Vertiv MiniMate2 MMD12",
+      "model": "Vertiv MiniMate2 MMD18E",
       "family": "Vertiv MiniMate2",
-      "capacity_btu": 36000,
+      "capacity_btu": 15300,
+      "total_capacity_btu": 16900,
+      "minimum_sensible_capacity_btu": null,
+      "rating_conditions": {
+        "indoor_db_f": 75.0,
+        "indoor_rh_pct": 45.0,
+        "outdoor_db_f": 95.0
+      },
       "low_ambient_kit_available": true,
-      "notes": "Nominal 3 ton precision cooling. 24/7 IT duty."
+      "continuous_duty": true,
+      "equipment_cooling_approved": true,
+      "verification_status": "verified",
+      "source_url": "https://www.vertiv.com/en-us/products-catalog/thermal-management/room-cooling/mmd18e-4.85kw/",
+      "verified_on": "2026-08-06",
+      "notes": "Nominal 1.5 ton precision cooling. 24/7 IT duty. Discontinued by Vertiv but a common field install — still serviceable."
     },
     {
-      "model": "Vertiv MiniMate2 MMD18",
+      "model": "Vertiv MiniMate2 MMD24E",
       "family": "Vertiv MiniMate2",
-      "capacity_btu": 54000,
+      "capacity_btu": 19500,
+      "total_capacity_btu": 21800,
+      "minimum_sensible_capacity_btu": null,
+      "rating_conditions": {
+        "indoor_db_f": 75.0,
+        "indoor_rh_pct": 45.0,
+        "outdoor_db_f": 95.0
+      },
       "low_ambient_kit_available": true,
-      "notes": "Nominal 4.5 ton precision cooling. 24/7 IT duty."
+      "continuous_duty": true,
+      "equipment_cooling_approved": true,
+      "verification_status": "verified",
+      "source_url": "https://www.vertiv.com/en-us/products-catalog/thermal-management/room-cooling/mmd24e-5.7kw/",
+      "verified_on": "2026-08-06",
+      "notes": "Nominal 2 ton precision cooling. Larger IDFs and small data rooms. Discontinued by Vertiv but a common field install — still serviceable."
     },
     {
-      "model": "Vertiv MiniMate2 MMD24",
-      "family": "Vertiv MiniMate2",
-      "capacity_btu": 72000,
-      "low_ambient_kit_available": true,
-      "notes": "Nominal 6 ton precision cooling. Larger IDFs and small data rooms."
-    },
-    {
-      "model": "Vertiv DataMate3 DME05",
+      "model": "Vertiv DataMate DME020E",
       "family": "Vertiv DataMate",
-      "capacity_btu": 60000,
+      "capacity_btu": 16700,
+      "total_capacity_btu": 17200,
+      "minimum_sensible_capacity_btu": null,
+      "rating_conditions": {
+        "indoor_db_f": 75.0,
+        "indoor_rh_pct": 45.0,
+        "outdoor_db_f": 95.0
+      },
       "low_ambient_kit_available": true,
-      "notes": "Nominal 5 ton precision cooling. Floor-standing, year-round, mission-critical."
+      "continuous_duty": true,
+      "equipment_cooling_approved": true,
+      "verification_status": "verified",
+      "source_url": "https://www.vertiv.com/4a30b5/globalassets/shared/liebert-datamate-brochure_00.pdf",
+      "verified_on": "2026-08-06",
+      "notes": "North American Liebert DataMate line (not the APAC DataMate3000-2 series). Floor-standing, 24/7 IT duty."
     },
     {
-      "model": "Vertiv DataMate3 DME07",
+      "model": "Vertiv DataMate DME027E",
       "family": "Vertiv DataMate",
-      "capacity_btu": 84000,
+      "capacity_btu": 22200,
+      "total_capacity_btu": 22500,
+      "minimum_sensible_capacity_btu": null,
+      "rating_conditions": {
+        "indoor_db_f": 75.0,
+        "indoor_rh_pct": 45.0,
+        "outdoor_db_f": 95.0
+      },
       "low_ambient_kit_available": true,
-      "notes": "Nominal 7 ton precision cooling. Engage HVAC engineer for placement."
+      "continuous_duty": true,
+      "equipment_cooling_approved": true,
+      "verification_status": "verified",
+      "source_url": "https://www.vertiv.com/4a30b5/globalassets/shared/liebert-datamate-brochure_00.pdf",
+      "verified_on": "2026-08-06",
+      "notes": "North American Liebert DataMate line. Floor-standing, 24/7 IT duty. Engage HVAC engineer for placement."
     },
     {
-      "model": "Vertiv DataMate3 DME10",
+      "model": "Vertiv DataMate DME037E",
       "family": "Vertiv DataMate",
-      "capacity_btu": 120000,
+      "capacity_btu": 29400,
+      "total_capacity_btu": 33200,
+      "minimum_sensible_capacity_btu": null,
+      "rating_conditions": {
+        "indoor_db_f": 75.0,
+        "indoor_rh_pct": 45.0,
+        "outdoor_db_f": 95.0
+      },
       "low_ambient_kit_available": true,
-      "notes": "Nominal 10 ton precision cooling. Beyond typical closet — consult engineer."
+      "continuous_duty": true,
+      "equipment_cooling_approved": true,
+      "verification_status": "verified",
+      "source_url": "https://www.vertiv.com/4a30b5/globalassets/shared/liebert-datamate-brochure_00.pdf",
+      "verified_on": "2026-08-06",
+      "notes": "North American Liebert DataMate line. Floor-standing, 24/7 IT duty. Beyond typical closet — consult engineer."
     }
   ]
 }

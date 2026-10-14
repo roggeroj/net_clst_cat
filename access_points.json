@@ -2,7 +2,8 @@
   "_metadata": {
     "description": "Enterprise wireless AP catalog. Watts are typical full-load draw used to estimate PoE utilization on switches. dual_home_capable indicates the AP supports redundant uplinks to two switches with PoE failover (dual mGig, LAG/LACP, or smart-rate paired ports). Vendor field is used by the Configure-APs dialog to filter AP models to match the closet's switch vendor (single-vendor closets are the norm).",
     "schema_version": 3,
-    "last_updated": "2026-05"
+    "last_updated": "2026-10",
+    "pricing_note": "list_price_usd is a street price (CDW advertised or sign-in price from a cdw.com web snapshot, see price_source) unless price_source says otherwise; msrp_usd is the manufacturer list price CDW showed alongside it. Prices are planning figures, not quotes."
   },
   "access_points": [
     {
@@ -12,7 +13,11 @@
       "watts": 20,
       "poe_class": "802.3at",
       "dual_home_capable": false,
-      "wifi_gen": "Wi-Fi 6"
+      "wifi_gen": "Wi-Fi 6",
+      "list_price_usd": 562.99,
+      "price_updated": "2026-10-14",
+      "price_source": "CDW sign-in price, cdw.com #6418290, SKU C9105AXI-B; web snapshot 2026-10-14",
+      "msrp_usd": 1059.98
     },
     {
       "vendor": "Cisco",
@@ -21,7 +26,10 @@
       "watts": 25,
       "poe_class": "802.3at",
       "dual_home_capable": false,
-      "wifi_gen": "Wi-Fi 6"
+      "wifi_gen": "Wi-Fi 6",
+      "list_price_usd": 1924.99,
+      "price_updated": "2026-10-14",
+      "price_source": "CDW sign-in price, cdw.com #5583205, SKU C9120AXI-B; web snapshot 2026-10-14"
     },
     {
       "vendor": "Cisco",
@@ -30,7 +38,11 @@
       "watts": 30,
       "poe_class": "802.3at",
       "dual_home_capable": true,
-      "wifi_gen": "Wi-Fi 6"
+      "wifi_gen": "Wi-Fi 6",
+      "list_price_usd": 2418.99,
+      "price_updated": "2026-10-14",
+      "price_source": "CDW sign-in price, cdw.com #5831887, SKU C9130AXI-B; web snapshot 2026-10-14",
+      "msrp_usd": 3536.33
     },
     {
       "vendor": "Cisco",
@@ -39,7 +51,11 @@
       "watts": 35,
       "poe_class": "802.3at",
       "dual_home_capable": true,
-      "wifi_gen": "Wi-Fi 6E"
+      "wifi_gen": "Wi-Fi 6E",
+      "list_price_usd": 2675.99,
+      "price_updated": "2026-10-14",
+      "price_source": "CDW sign-in price, cdw.com #6847442, SKU C9136I-B; web snapshot 2026-10-14",
+      "msrp_usd": 3981.66
     },
     {
       "vendor": "Cisco",
@@ -48,7 +64,11 @@
       "watts": 35,
       "poe_class": "802.3at",
       "dual_home_capable": true,
-      "wifi_gen": "Wi-Fi 6E"
+      "wifi_gen": "Wi-Fi 6E",
+      "list_price_usd": 1719.99,
+      "price_updated": "2026-10-14",
+      "price_source": "CDW sign-in price, cdw.com #7291662, SKU CW9166I-B; web snapshot 2026-10-14",
+      "msrp_usd": 3316.95
     },
     {
       "vendor": "Cisco",
@@ -57,7 +77,11 @@
       "watts": 60,
       "poe_class": "802.3bt",
       "dual_home_capable": true,
-      "wifi_gen": "Wi-Fi 7"
+      "wifi_gen": "Wi-Fi 7",
+      "list_price_usd": 2181.99,
+      "price_updated": "2026-10-14",
+      "price_source": "CDW advertised price, cdw.com #8159380, SKU CW9176I-CFG; web snapshot 2026-10-14",
+      "msrp_usd": 3245.83
     },
     {
       "vendor": "Meraki",
@@ -66,7 +90,11 @@
       "watts": 20,
       "poe_class": "802.3at",
       "dual_home_capable": false,
-      "wifi_gen": "Wi-Fi 6"
+      "wifi_gen": "Wi-Fi 6",
+      "list_price_usd": 559.99,
+      "price_updated": "2026-10-14",
+      "price_source": "CDW sign-in price, cdw.com #5975248, SKU MR36-HW; web snapshot 2026-10-14",
+      "msrp_usd": 1054.69
     },
     {
       "vendor": "Meraki",
@@ -75,7 +103,11 @@
       "watts": 30,
       "poe_class": "802.3at",
       "dual_home_capable": false,
-      "wifi_gen": "Wi-Fi 6"
+      "wifi_gen": "Wi-Fi 6",
+      "list_price_usd": 1329.99,
+      "price_updated": "2026-10-14",
+      "price_source": "CDW sign-in price, cdw.com #5975250, SKU MR46-HW; web snapshot 2026-10-14",
+      "msrp_usd": 2495.78
     },
     {
       "vendor": "Meraki",
@@ -84,7 +116,11 @@
       "watts": 35,
       "poe_class": "802.3at",
       "dual_home_capable": true,
-      "wifi_gen": "Wi-Fi 6"
+      "wifi_gen": "Wi-Fi 6",
+      "list_price_usd": 2539.99,
+      "price_updated": "2026-10-14",
+      "price_source": "CDW advertised price, cdw.com #6902379, SKU MR57-HW; web snapshot 2026-10-14",
+      "msrp_usd": 3715.78
     },
     {
       "vendor": "Meraki",
@@ -93,7 +129,11 @@
       "watts": 30,
       "poe_class": "802.3at",
       "dual_home_capable": false,
-      "wifi_gen": "Wi-Fi 6E"
+      "wifi_gen": "Wi-Fi 6E",
+      "list_price_usd": 1112.99,
+      "price_updated": "2026-10-14",
+      "price_source": "CDW sign-in price, cdw.com #7175629, SKU CW9162I-MR; web snapshot 2026-10-14",
+      "msrp_usd": 1655.14
     },
     {
       "vendor": "Meraki",
@@ -102,7 +142,24 @@
       "watts": 35,
       "poe_class": "802.3at",
       "dual_home_capable": true,
-      "wifi_gen": "Wi-Fi 6E"
+      "wifi_gen": "Wi-Fi 6E",
+      "list_price_usd": 1894.99,
+      "price_updated": "2026-10-14",
+      "price_source": "CDW sign-in price, SKU CW9166I-MR; web snapshot 2026-10-14",
+      "msrp_usd": 2818.3
+    },
+    {
+      "vendor": "Meraki",
+      "model": "CW9172I",
+      "label": "Meraki CW9172I (Wi-Fi 7, entry)",
+      "watts": 32,
+      "poe_class": "802.3bt",
+      "dual_home_capable": false,
+      "wifi_gen": "Wi-Fi 7",
+      "list_price_usd": 1126.99,
+      "price_updated": "2026-10-14",
+      "price_source": "CDW sign-in price, cdw.com #8263718, SKU CW9172I-RTG (Meraki -MR SKU not listed); web snapshot 2026-10-14",
+      "msrp_usd": 1676.64
     },
     {
       "vendor": "Meraki",
@@ -111,7 +168,24 @@
       "watts": 60,
       "poe_class": "802.3bt",
       "dual_home_capable": true,
-      "wifi_gen": "Wi-Fi 7"
+      "wifi_gen": "Wi-Fi 7",
+      "list_price_usd": 2181.99,
+      "price_updated": "2026-10-14",
+      "price_source": "CDW advertised price, cdw.com #8159380, SKU CW9176I-CFG (Meraki -MR SKU not listed); web snapshot 2026-10-14",
+      "msrp_usd": 3245.83
+    },
+    {
+      "vendor": "Meraki",
+      "model": "CW9178I",
+      "label": "Meraki CW9178I (Wi-Fi 7, flagship, quad-radio, dual mGig)",
+      "watts": 47,
+      "poe_class": "802.3bt",
+      "dual_home_capable": true,
+      "wifi_gen": "Wi-Fi 7",
+      "list_price_usd": 2618.99,
+      "price_updated": "2026-10-14",
+      "price_source": "CDW sign-in price, cdw.com #8186935, SKU CW9178I-RTG (Meraki -MR SKU not listed); web snapshot 2026-10-14",
+      "msrp_usd": 3896.29
     },
     {
       "vendor": "Arista",
@@ -152,17 +226,26 @@
     {
       "vendor": "Arista",
       "model": "W-318",
-      "label": "Arista W-318 (Wi-Fi 7, dual mGig)",
-      "watts": 45,
+      "label": "Arista W-318 (Wi-Fi 6E, wall-plate)",
+      "watts": 39,
       "poe_class": "802.3bt",
+      "dual_home_capable": false,
+      "wifi_gen": "Wi-Fi 6E"
+    },
+    {
+      "vendor": "Arista",
+      "model": "C-430",
+      "label": "Arista C-430 (Wi-Fi 7, dual mGig)",
+      "watts": 30,
+      "poe_class": "802.3at",
       "dual_home_capable": true,
       "wifi_gen": "Wi-Fi 7"
     },
     {
       "vendor": "Arista",
-      "model": "W-368",
-      "label": "Arista W-368 (Wi-Fi 7, high, dual mGig)",
-      "watts": 60,
+      "model": "C-460",
+      "label": "Arista C-460 (Wi-Fi 7, flagship, dual mGig)",
+      "watts": 42,
       "poe_class": "802.3bt",
       "dual_home_capable": true,
       "wifi_gen": "Wi-Fi 7"
